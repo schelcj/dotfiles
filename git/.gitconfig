@@ -1,0 +1,16 @@
+[user]
+  name = Chris Scheller
+  email = schelcj@pobox.com
+[alias]
+  unstange = reset HEAD
+  stat = status
+  ci = commit
+  co = checkout
+  br = branch
+  up = pull
+[color]
+  diff = auto
+[push]
+  default = matching
+[core]
+  excludesfile = /home/schelcj/.gitignore_global
