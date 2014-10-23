@@ -98,6 +98,7 @@ augroup wiki
   autocmd BufNewFile,BufRead *.wiki set foldmethod=manual
   autocmd BufNewFile,BufRead *.wiki set nonu
   nmap <Leader>wT <Plug>VimwikiTabnewLink
+  nmap <Leader>tt <Plug>VimwikiToggleListItem
 augroup end
 
 map <Leader><Right> :tabn<CR>
