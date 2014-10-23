@@ -1,0 +1,5 @@
+basedir=/home/schelcj/Mail/Archive
+maildir=Pobox...
+mformat=maildir
+database=~/.mairix-pobox.db
+mfolder=~/Mail/Search
