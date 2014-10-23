@@ -1,0 +1,20 @@
+#!/bin/sh
+
+/usr/local/bin/dunst &
+
+gnome-settings-daemon &
+gnome-keyring-daemon &
+
+xscreensaver -no-splash &
+nm-applet &
+
+~/.wallpapers/change --daemon
+~/scripts/start_dropbox.sh
+
+/opt/extras.ubuntu.com/my-weather-indicator/bin/my-weather-indicator &
+google-drive-ocamlfuse -label umich ~/Drive/Umich/
+
+#fluxgui &
+#everpad &
+#hamster-indicator &
+ssh-add
