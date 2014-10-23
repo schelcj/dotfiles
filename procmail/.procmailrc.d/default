@@ -1,0 +1,171 @@
+DEFAULT   = $HOME/Maildir/
+LOGFILE   = $HOME/.procmail.log
+SORTED    = $HOME/Mail/Archive
+DROPPRIVS = YES
+YEAR=`date +%Y`
+
+# we get "Sent Mail" messages that we want to keep as our sent-mail
+:0
+*^From: .* <schelcj@pobox.com>
+$SORTED/sent-mail/$YEAR/
+
+# archive everything else
+:0
+$SORTED/INBOX/$YEAR/
+
+###############################################################################
+# Keeping around for historical purposes only. not in use anymore.
+###############################################################################
+
+# ##############################
+# # Var definitions
+# ##############################
+# # Where so send mail that doesn't match any recipe
+# DEFAULT = $HOME/Maildir/
+
+# # Where i keep a log of procmail transactions
+# LOGFILE = $HOME/.procmail.log
+
+# # Toplevel of our mail store
+# SORTED = $HOME/mail
+
+# # Where all my mailing list mail is stored
+# LISTS = $SORTED/lists
+
+# # Where all admin mail is stored
+# ADMIN = $SORTED/admin
+
+# # Tell procmail to drop any privileges it might have had
+# DROPPRIVS = YES
+
+# # Where sendmail binary lives(in this case, the qmail wrapper for sendmail)
+# SENDMAIL = /var/qmail/bin/sendmail
+
+# # Grab the current year
+# YEAR=`date +%Y`
+
+# # Grab the current month
+# MONTH=`date +%m`
+
+# # Set dummy var so that we can test the existence of the spam store
+# DUMMY=`test -d $SORTED/SPAM/$YEAR/$MONTH || mkdir -p -m 0700 $SORTED/SPAM/$YEAR`
+
+# ##############################
+# # Spamassassin
+# ##############################
+# # check all mail against spamassassin
+# :0fw
+# | spamc -s 500000
+
+# :0e
+# {
+#   EXITCODE=$?
+# }
+
+# # Write all spam to seperate store
+# :0
+# * ^X-Spam-Status: Yes
+# $SORTED/SPAM/$YEAR/$MONTH/
+
+# ##############################
+# # Misc
+# ##############################
+# # send mail back to beck that slipped through
+# :0
+# *^Delivered-To: schelrj@pobox.com
+# ! schelrj@avlug.org
+
+# # put my discard repot in my inbox
+# :0
+# *^From: discard-report@pobox.com
+# $ADMIN/pobox-discards/
+
+# #:0
+# #*^TO_schelrj@pobox.com
+# #! schelrj@avlug.org
+
+# # those stupid monthly reminder msgs from mailman listserv
+# :0
+# *^From: mailman-owner@.*
+# $DEFAULT
+
+# # send mojolin jobs announcement to my inbox
+# :0
+# *^TO_jobs@mojolin.com
+# $DEFAULT
+
+# # send slackware-security announcements to my inbox
+# :0
+# *^TO_slackware-security@slackware.com 
+# $DEFAULT
+
+# # send silvertree soup mail to work
+# :0
+# *^Subject: The Soup Lovers
+# ! chris@oneupweb.com
+
+# ##############################
+# # PGP/MIME
+# ##############################
+# # Add a "Content-Type: application/pgp" header
+# :0 fBw
+# * ^-----BEGIN PGP MESSAGE-----
+# * !Content-type: multipart
+# | formail -i "Content-Type: application/pgp; format=text; x-action=encryptsign"
+
+# # Add a "Content-Type: application/pgp"
+# :0 fBw
+# * ^-----BEGIN PGP SIGNED MESSAGE-----
+# * !Content-type: multipart
+# | formail -i "Content-Type: application/pgp; format=text; x-action=sign"
+
+# ##############################
+# # Mailing lists
+# ##############################
+# # catch Majordomo lists
+# :0
+# * ^Sender: owner-\/[-a-zA-Z0-9_.]*
+# $LISTS/$MATCH/
+
+# # catch ezmlm lists
+# :0
+# * ^Mailing-List: contact \/[a-zA-Z0-9_.]*
+# * ^Delivered-To: mailing list \/[-a-zA-Z0-9_.]*
+# $LISTS/$MATCH/
+
+# # catch mailman lists
+# :0
+# * ^X-Mailman-Version:
+# * ^X-BeenThere: \/[-a-zA-Z0-9_.]*
+# $LISTS/$MATCH/
+
+# # catch listserv lists
+# :0
+# * ^Return-Path: <owner-l-\/[-a-zA-Z0-9_.]*
+# $LISTS/$MATCH/
+
+# # catch egroups lists(aka yahoo groups)
+# :0
+# * ^Delivered-To: mailing list \/[a-zA-Z0-9_.]*
+# $LISTS/$MATCH/
+
+# # not sure what listserv this is but it got past my previous recipes
+# :0
+# * ^X-List: \/[-a-zA-Z0-9_.]*
+# $LISTS/$MATCH/
+
+# ##############################
+# # misc admin aliases
+# ##############################
+# :0
+# *^TO_ cvs@avlug.org
+# $ADMIN/avlug-cvs/
+
+# :0
+# *^TO_ (.*@avlug.org|.*@hedwig.avlug.org|.*@mail.avlug.org)
+# $ADMIN/avlug/
+
+# # various mailings from my home network
+# :0
+# *^From: (.*@.*.schelcj.dyndns.org|.*@schelcj.dyndns.org)
+# $ADMIN/schelcj/
