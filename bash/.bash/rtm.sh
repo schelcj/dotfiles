@@ -1,0 +1,5 @@
+alias planner="rtm planner today status:incomplete"
+alias today="rtm -c ls due:today"
+alias todo="rtm -c ls list:work and isrepeating:false and not tag:waitingfor"
+alias overdue="rtm -c ls duebefore:today"
+alias inbox="rtm -c ls list:inbox"

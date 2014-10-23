@@ -1,0 +1,41 @@
+" set my colorscheme
+" colorscheme asu1dark
+" colorscheme darkblue
+colorscheme desert
+
+" turn on syntax highlighting
+syn on
+
+" set my default tab stop to 2 spaces
+set ts=2
+
+" replace tabs with spaces
+set expandtab
+
+" set the window text width for email
+set textwidth=70
+
+" show the spiffy ruler
+set ruler
+
+" turn off line wrapping
+set nowrap
+
+" show commands so i know what the hell i am doing
+set showcmd
+
+" ignore case when searching; except when i want it 
+set ignorecase smartcase
+
+" set the default fileformat to unix and unix only
+set fileformat=unix
+
+" turn on smart indenting
+set si
+
+" set my shell to bash
+set shell=/bin/bash
+
+map <Esc>d d/^-- <CR>
+
+set colorcolumn=80
