@@ -1,0 +1,35 @@
+ENTRY "Documents" URL "/home/schelcj/Documents"
+ENTRY "Downloads" URL "/home/schelcj/Downloads"
+ENTRY "scripts" URL "/home/schelcj/scripts"
+ENTRY "Media" URL "/cifs/Media"
+ENTRY "Trash" URL "/home/schelcj/.local/share/Trash/files"
+GROUP "Dropbox"
+  ENTRY "Dropbox" URL "/home/schelcj/Dropbox"
+  ENTRY "Attachments" URL "/home/schelcj/Dropbox/Attachments"
+  ENTRY "Meeting Notes" URL "/home/schelcj/Dropbox/Umich/MeetingNotes"
+  ENTRY "Wikis" URL "/home/schelcj/Dropbox/Wikis"
+ENDGROUP
+GROUP "4077th"
+  ENTRY "schelcj@klinger" URL "/sh://schelcj@4077th.mooo.com/home/schelcj"
+  ENTRY "schelcj@hawkeye" URL "/sh://schelcj@192.168.1.6/home/schelcj"
+  ENTRY "root@klinger" URL "/sh://root@192.168.1.1/export/Media"
+  ENTRY "root@mulcahy" URL "/sh://root@batai/home/schelcj"
+ENDGROUP
+GROUP "8063rd"
+  ENTRY "schelcj@hunnicutt" URL "/sh://schelcj@hunnicutt.dyndns.org/home/schelcj"
+ENDGROUP
+GROUP "Umich"
+  ENTRY "csg" URL "/afs/umich.edu/group/s/sph/csg"
+  ENTRY "schelcj@bajor" URL "/sh://schelcj@bajor/home/schelcj"
+  ENTRY "root@xfer" URL "/sh://root@xfer/"
+  ENTRY "root@backuppc" URL "/sh://root@backuppc/"
+  ENTRY "schelcj@katan" URL "/sh://schelcj@katan/home/schelcj"
+ENDGROUP
+GROUP "Concert"
+  ENTRY "cscheller@alba" URL "/sh://cscheller@alba/home/CONCERTPHARMA/cscheller"
+ENDGROUP
+GROUP "FTP Sites"
+  ENTRY "ftp.bio.sph.umich.edu" URL "/ftp://xfer.bio.sph.umich.edu"
+  ENTRY "ftp.osuosl.org" URL "/ftp://ftp.osuosl.org/pub"
+  ENTRY "ftp.kernel.org:" URL "/ftp://ftp.kernel.org"
+ENDGROUP
