@@ -1,0 +1,8 @@
+set mbox_type=maildir
+set folder=~/mail/
+set spoolfile=~/Maildir/
+set mbox="!"
+
+subscribe `cd ~/mail/ && echo *`
+mailboxes ~/Maildir
+mailboxes `echo ~/mail/*`

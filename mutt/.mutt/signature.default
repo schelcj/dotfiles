@@ -1,0 +1,15 @@
+#!/bin/sh
+
+
+cat<<EOF
+Chris Scheller | http://www.pobox.com/~schelcj
+----------------------------------------------
+$(/usr/games/fortune chalkboard)
+EOF
+
+
+#| "Ubuntu"   -- an African word, meaning "Slackware is too hard for me"      |
+#| "Mandriva" -- a French word, meaning "Slackware is too hard for me"        |
+#| "Fedora"   -- an American word, meaning "Slackware is too hard for me"     |
+#|                        -- seen on alt.os.linux.slackware                   |
+

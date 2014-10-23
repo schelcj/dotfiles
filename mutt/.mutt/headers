@@ -1,0 +1,17 @@
+ignore *
+unignore Date:
+unignore X-Mailer:
+unignore X-Sender:
+unignore X-X-Sender:
+unignore User-Agent:
+unignore Message-ID:
+unignore From:
+unignore To:
+unignore CC:
+unignore BCC:
+unignore Reply-To:
+unignore Subject:
+unignore X-Spam-Status:
+unignore X-Labels:
+
+hdr_order Date: Message-ID: X-Mailer: X-Sender: X-X-Sender: User-Agent: From: To: CC: BCC: Reply-To: Subject: X-Spam-Status: X-Labels:

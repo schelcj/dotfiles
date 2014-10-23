@@ -1,0 +1,28 @@
+folder-hook 'Pobox/*' 'set folder="~/Mail/Pobox/"'
+folder-hook 'Pobox/*' 'set spoolfile="+INBOX"'
+folder-hook 'Pobox/*' 'set record="+[Gmail].Sent Mail"'
+folder-hook 'Pobox/*' 'set from="schelcj@pobox.com"'
+folder-hook 'Pobox/*' 'set signature="~/.mutt/signature.txt"'
+folder-hook 'Pobox/*' 'set strict_threads=yes'
+folder-hook 'Pobox/*' 'set sort_re=yes'
+folder-hook 'Pobox/*' 'color status white blue'
+folder-hook 'Pobox/*' 'color indicator white red'
+folder-hook 'Pobox/*' 'macro index G "<shell-escape>offlineimap -u basic -1 -o -a Pobox<return>" "Fetch mail from my Pobox account"'
+folder-hook 'Pobox/*' 'macro pager S "<shell-escape>mairix -f ~/Dropbox/dot-files/mairix/mairixrc-pobox " "Run mairix search"'
+folder-hook 'Pobox/*' 'macro index S "<shell-escape>mairix -f ~/Dropbox/dot-files/mairix/mairixrc-pobox " "Run mairix search"'
+folder-hook 'Pobox/*' 'my_hdr X-URL: http://www.pobox.com/~schelcj/'
+folder-hook 'Pobox/*' 'my_hdr X-GPG-Key: http://db.tt/p9G6GZtT'
+folder-hook 'Pobox/*' 'my_hdr X-GPG-Key-FingerPrint: B379 2047 DD11 705A 0DB9  2391 05DE 2966 D677 6630'
+# folder-hook 'Pobox/*' 'set smtp_url="smtp://schelcj%40pobox.com@smtp.pobox.com:587/"'
+folder-hook 'Pobox/*' 'set crypt_autosign'
+
+#message-hook '~t schellers@pobox.com' 'set from=schellers@pobox.com'
+#message-hook '~t schellers@pobox.com' 'unset signature'
+
+#message-hook '(~t schelcj@pobox.com|~N)' 'set from=schelcj@pobox.com'
+#message-hook '(~t schelcj@pobox.com|~N)' 'set signature="~/.mutt/signature.default|"'
+
+lists     avlug schellers smallpicture-user
+subscribe avlug schellers smallpicture-user
+
+mailboxes ~/Mail/Pobox/INBOX

@@ -1,0 +1,13 @@
+set realname="Chris Scheller"
+set from="schelcj@pobox.com"
+set signature="~/.mutt/signature.txt"
+set folder="~/Mail/Pobox/"
+set spoolfile="+INBOX"
+set record="+Sent%20Mail"
+set postponed="~/Mail/Drafts"
+
+folder-hook . set strict_threads=yes
+folder-hook . set sort_re=yes
+folder-hook . set collapse_unread=no
+folder-hook . unset crypt_autosign
+folder-hook . unset smtp_url
