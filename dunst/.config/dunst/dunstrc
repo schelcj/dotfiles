@@ -1,0 +1,48 @@
+[global]
+    font = Monospace-12
+    format = "<b>%s %p</b>\n%b"
+    sort = yes
+    indicate_hidden = true
+    modifier = ctrl
+    key = space
+    history_key = grave
+    # geometry = "x5"
+    #geometry = "0x3-30+20"
+    geometry = "300x5-20+20"
+    idle_threshold = 0
+    separator_color = frame
+    word_wrap = yes
+    allow_markup = yes
+    alignment = center
+    show_age_threshold = 60
+    sticky_history = yes
+    follow = mouse
+    separator_height = 2
+    padding = 10
+    horizontal_padding = 10
+    startup_notification = true
+
+[frame]
+    width = 3
+    color = "#AAAAAA"
+
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    history = ctrl+grave
+    context = ctrl+shift+period
+
+[urgency_low]
+    background = "#222222"
+    foreground = "#888881"
+    timeout = 5
+
+[urgency_normal]
+    background = "#285577"
+    foreground = "#FFFFFF"
+    timeout = 10
+
+[urgency_critical]
+    background = "#900000"
+    foreground = "#FFFFFF"
+    timeout = 0
