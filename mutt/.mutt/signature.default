@@ -4,7 +4,7 @@
 cat<<EOF
 Chris Scheller | http://www.pobox.com/~schelcj
 ----------------------------------------------
-$(/usr/games/fortune chalkboard)
+$(/usr/games/fortune -s)
 EOF
 
 
