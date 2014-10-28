@@ -7,13 +7,13 @@ macro index <F8> "<change-folder>~/Mail/Avlug/INBOX<return>" "change to my avlug
 macro index <F9> "<change-folder>~/Mail/Pobox/INBOX<return>" "change to my gmail inbox"
 macro index <F10> "<change-folder>~/Mail/Umich/INBOX<return>" "change to my umich inbox"
 #macro index S "<shell-escape>mairix " "Run mairix search"
-macro index <esc>s "<change-folder-readonly>~/Mail/Search<return>" "Change to search result folder"
+#macro index <esc>s "<change-folder-readonly>~/Mail/Search<return>" "Change to search result folder"
 
 macro pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts"
 #macro pager \cb "<pipe-message> urlscan<Enter>" "load urlview with current urls"
 macro pager <esc>r '|/usr/games/rot13|more'\n 'run msg through rot13'
 #macro pager S "<shell-escape>mairix " "Run mairix search"
-macro pager <esc>s "<change-folder-readonly>~/Mail/Search<return>" "Change to search result folder"
+#macro pager <esc>s "<change-folder-readonly>~/Mail/Search<return>" "Change to search result folder"
 
 #macro index <F6> "<shell-escape>mairix <enter><change-folder-readonly>~/Mail/Search<return>"        
 #macro pager <f8> "<sync-mailbox><toggle-write><shell-escape>mairix \"$@\"<enter><change-folder>=findex<enter><sort>t<delete-pattern>~=<enter><sync-mailbox>"        
@@ -31,3 +31,9 @@ macro pager <esc>s "<change-folder-readonly>~/Mail/Search<return>" "Change to se
 # Follw Up - Move messages to follow up folder
 # bind editor <space> noop # makes spaces work in folder names in macros
 # macro index,pager \cu "<save-message>=Follow up<enter><enter>" "Move message to Follow Up folder"
+
+# mu search:
+macro index S "<enter-command>unset wait_key<enter><shell-escape>read -p'mu query: ' x; \
+  mu find --clearlinks --linksdir ~/Mail/Search --format links \$x<enter>\ <change-folder-readonly>~/Mail/Search\n" "mu find"
+
+macro index <Esc>s "<change-folder-readonly>~/Mail/Search\n" "display mu-find results"
