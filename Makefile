@@ -1,3 +1,5 @@
+install: mod-init mod-update
+
 mod-init:
 	@git submodule init
 
