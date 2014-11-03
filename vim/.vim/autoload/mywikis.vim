@@ -25,7 +25,7 @@ function! mywikis#load()
   let wiki_3.ext = '.md'
 
   let wiki_4 = {}
-  let wiki_4.path = '~/Dropbox/Wikis/SPH ICS'
+  let wiki_4.path = '~/Dropbox/Wikis/SPH-ICS'
   let wiki_4.syntax = 'markdown'
   let wiki_4.ext = '.md'
 
