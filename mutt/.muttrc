@@ -11,7 +11,7 @@ set smart_wrap=no
 set editor="exec /usr/bin/vim -u ~/.vimmailrc --noplugin"
 set abort_unmodified=no
 set abort_nosubject=no
-set query_command = "echo ; /bin/run-parts -a '%s' ~/.mutt/address-providers/|grep '@'"
+set query_command = "echo ; /bin/run-parts -a '%s' ~/.mutt/address-providers/|grep '@'|sort -u"
 #set query_command="abook --mutt-query '%s'"
 #set query_command="mu cfind --muhome=~/.mu-sent-index --format=mutt-ab '%s'"
 #set query_command="goobook query '%s'"
