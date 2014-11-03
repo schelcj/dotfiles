@@ -4,7 +4,7 @@ color header brightyellow default 'From:'
 color indicator white red
 
 color index yellow default '~v'
-color index brightred default '~f teraghu'
+color index brightred default '~f goncalo'
 color index cyan default '~l'
 #color index brightcyan default ~l ~N
 #color index brightgreen default ~N
