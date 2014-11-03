@@ -2,7 +2,7 @@
 # port by okraits - http://okraits.de
 
 # $i3-theme-window
-new_window normal 1
+new_window normal 0
 # class                 border  backgr. text    indicator
 client.focused          #808090 #606070 #C0C0C5 #2e9ef4
 client.focused_inactive #5F5F6F #303040 #707075 #484e50
