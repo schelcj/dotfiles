@@ -13,8 +13,8 @@ cache-file                ~/.cache/newsbeuter/cache.db
 show-read-feeds           no
 show-read-articles        no
 reload-time               30
-refresh-on-startup        no
-#reload-only-visible-feeds yes
+refresh-on-startup        yes
+reload-only-visible-feeds no
 notify-screen             yes
 suppress-first-reload     yes
 confirm-exit              yes
@@ -44,8 +44,8 @@ datetime-format "%b, %d"
 feedlist-format "%4i %2n  %t"
 articlelist-format "%4i %f %-100t  [%12a] %D"
 
-define-filter "hide imagery" "tags !~ \"Imagery\" and unread_count > 0"
-macro i set-filter "tags !~ \"Imagery\" and unread_count > 0"
+define-filter "hide imagery" "tags !~ \"Imagery|Humor|Wallpapers\" and unread_count > 0"
+macro i set-filter "tags !~ \"Imagery|Humor|Wallpapers\" and unread_count > 0"
 
 #ignore-article "*" "feedindex == 5"
 
@@ -57,6 +57,6 @@ color listnormal_unread white default
 color listfocus        white red
 color listfocus_unread white red
 
-#color info       color136 color235 
+#color info       color136 color235
 #color background color244 color234
 #color article    color244 color234
