@@ -389,13 +389,13 @@ l       print landscape
   ${HOME}/bin/print_landscape.sh %f
 
 f       Edit Chair Meeting Notes
-  vim ${HOME}/Dropbox/Umich/MeetingNotes/chair_meeting_notes.otl
+  vim ${HOME}/Documents/MeetingNotes/chair_meeting_notes.otl
 
 F       Edit Flux WG Meeting Notes
-  vim ${HOME}/Dropbox/Umich/MeetingNotes/flux_wg_meeting_notes.otl
+  vim ${HOME}/Documents/MeetingNotes/flux_wg_meeting_notes.otl
 
 I       Edit SPH ICS Meeting Notes
-  vim ${HOME}/Dropbox/Umich/MeetingNotes/ics_staff_meeting_notes.otl
+  vim ${HOME}/Documents/MeetingNotes/ics_staff_meeting_notes.otl
 
 D       Dropbox Public Url
   %view dropbox.py puburl %s
