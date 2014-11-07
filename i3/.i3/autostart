@@ -11,8 +11,8 @@ nm-applet &
 ~/.wallpapers/change --daemon
 ~/scripts/start_dropbox.sh
 
-/opt/extras.ubuntu.com/my-weather-indicator/bin/my-weather-indicator &
-google-drive-ocamlfuse -label umich ~/Drive/Umich/
+#/opt/extras.ubuntu.com/my-weather-indicator/bin/my-weather-indicator &
+#google-drive-ocamlfuse -label umich ~/Drive/Umich/
 
 #fluxgui &
 #everpad &

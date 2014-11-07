@@ -11,7 +11,7 @@ function _find_or_create() {
   local new_title="$3"
 
   case "$(_get_note_count "$notebook" "$title")" in
-    0)
+    '')
       geeknote create --notebook "$notebook" --title "$title" --content WRITE
       ;;
     1)
@@ -20,9 +20,6 @@ function _find_or_create() {
       else
         geeknote edit 1
       fi
-      ;;
-    '')
-      echo "Something is wacky, no results found"
       ;;
     *)
       echo "ACK, too many matches [$results]! Bailing out!"
