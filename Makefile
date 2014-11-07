@@ -9,6 +9,9 @@ mod-update:
 mod-new:
 	@echo "git submodule add <url> <path>"
 
+mod-del:
+	@echo "git submodule deinit --force <path>"
+
 stow-trill:
 	stow vim
 	stow bash
