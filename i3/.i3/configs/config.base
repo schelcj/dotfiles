@@ -146,14 +146,15 @@ bindsym $mod+Mod4+r move workspace to output right
 bindsym $mod+Control+l exec ~/scripts/lock.sh
 bindsym Mod4+w exec ~/.wallpapers/change
 bindsym Mod4+g exec gvim
-bindsym $mod+q exec quickswitch.py --dmenu 'dmenu -i -l 20'
-bindsym $mod+Escape exec quickswitch.py --dmenu 'dmenu -i -l 20' --workspaces
-bindsym $mod+grave exec quickswitch.py --dmenu 'dmenu -i -l 20' --scratchpad
+#bindsym $mod+q exec quickswitch.py --dmenu 'dmenu -i -l 20'
+#bindsym $mod+Escape exec quickswitch.py --dmenu 'dmenu -i -l 20' --workspaces
+#bindsym $mod+grave exec quickswitch.py --dmenu 'dmenu -i -l 20' --scratchpad
+bindsym $mod+grave exec ~/scripts/rofi.sh
 #bindsym $mod+m exec i3-sensible-terminal -e ~/scripts/mc.sh
 bindsym XF86Launch9 exec ~/scripts/next
 bindsym XF86Launch8 exec ~/scripts/ban
 bindsym XF86Launch7 exec ~/scripts/fav
-bindsym $mod+n exec everpad --create
+#bindsym $mod+n exec everpad --create
 bindsym XF86AudioRaiseVolume exec ~/scripts/volup
 bindsym XF86AudioLowerVolume exec ~/scripts/voldown
 
@@ -164,8 +165,9 @@ for_window [class="^Gnome-calculator"] floating toggle
 for_window [class="^Pidgin"] floating toggle
 for_window [class="^Skype"] floating toggle
 
-#assign [class="^Google-chrome"] 1 :www
+assign [class="^Google-chrome"] 1 :www
 assign [class="^Spotify"] 9 :music
+assign [class="^Clementine"] 9 :music
 
 exec ~/.i3/autostart
 
