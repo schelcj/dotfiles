@@ -24,3 +24,4 @@ stow-trill:
 	stow x11
 	stow dunst
 	stow wallpapers
+	stow doing
