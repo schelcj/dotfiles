@@ -9,9 +9,10 @@ function _find_or_create() {
   local notebook="$1"
   local title="$2"
   local new_title="$3"
+  local results=$(_get_note_count "$notebook" "$title")
 
-  case "$(_get_note_count "$notebook" "$title")" in
-    '')
+  case "$results" in
+    ''|0)
       geeknote create --notebook "$notebook" --title "$title" --content WRITE
       ;;
     1)
