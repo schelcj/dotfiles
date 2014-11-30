@@ -18,3 +18,4 @@ nm-applet &
 #everpad &
 #hamster-indicator &
 ssh-add
+xpad -N &
