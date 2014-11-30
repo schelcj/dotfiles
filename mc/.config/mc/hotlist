@@ -26,6 +26,7 @@ GROUP "Umich"
   ENTRY "schelcj@katan" URL "/sh://schelcj@katan/home/schelcj"
 ENDGROUP
 GROUP "Concert"
+  ENTRY "src" URL "/home/schelcj/src/concert"
   ENTRY "ConcertPharma" URL "/home/schelcj/Dropbox/Clients/ConcertPharma"
   ENTRY "cscheller@alba" URL "/sh://cscheller@alba/home/CONCERTPHARMA/cscheller"
 ENDGROUP
