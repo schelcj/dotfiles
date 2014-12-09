@@ -9,6 +9,7 @@ nm-applet &
 ~/scripts/start_dropbox.sh
 ssh-add
 xpad -N &
+clipit -d &
 
 #/opt/extras.ubuntu.com/my-weather-indicator/bin/my-weather-indicator &
 #google-drive-ocamlfuse -label umich ~/Drive/Umich/
