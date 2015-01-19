@@ -1,6 +1,6 @@
 [global]
     font = Monospace-12
-    format = "<b>%s %p</b>\n%b"
+    format = "<b>%a</b>\n%s %p\n%b"
     sort = yes
     indicate_hidden = true
     modifier = ctrl
