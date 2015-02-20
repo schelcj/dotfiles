@@ -62,7 +62,7 @@ function labbook() {
     title="untitled sysadmin labbook entry"
   fi
 
-  geeknote create --content WRITE --title "$title" --notebooks 'Labbooks' --tags "sysadmin"
+  geeknote create --content WRITE --title "$title" --notebook 'Labbooks' --tags "sysadmin"
 }
 
 function journal() {

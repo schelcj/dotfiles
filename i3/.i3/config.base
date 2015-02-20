@@ -150,20 +150,22 @@ bindsym Mod4+g exec gvim
 #bindsym $mod+Escape exec quickswitch.py --dmenu 'dmenu -i -l 20' --workspaces
 #bindsym $mod+grave exec quickswitch.py --dmenu 'dmenu -i -l 20' --scratchpad
 bindsym $mod+grave exec ~/scripts/rofi.sh
-#bindsym $mod+m exec i3-sensible-terminal -e ~/scripts/mc.sh
+bindsym $mod+m exec i3-sensible-terminal -e ~/scripts/mc.sh
 bindsym XF86Launch9 exec ~/scripts/next
 bindsym XF86Launch8 exec ~/scripts/ban
 bindsym XF86Launch7 exec ~/scripts/fav
-#bindsym $mod+n exec everpad --create
+bindsym $mod+n exec xpad
 bindsym XF86AudioRaiseVolume exec ~/scripts/volup
 bindsym XF86AudioLowerVolume exec ~/scripts/voldown
+bindsym $mod+Control+w exec ~/scripts/weather.sh
 
 workspace_auto_back_and_forth yes
 
-for_window [class="^Google-chrome"] border none
+for_window [class="^Google-chrome"] border 1pixel
 for_window [class="^Gnome-calculator"] floating toggle
 for_window [class="^Pidgin"] floating toggle
 for_window [class="^Skype"] floating toggle
+for_window [class="^xpad"] floating toggle
 
 assign [class="^Google-chrome"] 1 :www
 assign [class="^Spotify"] 9 :music
@@ -179,6 +181,6 @@ bar {
 
 $i3-theme-window
 
-bindsym $mod+m [title="^mc"] focus
+#bindsym $mod+m [title="^mc"] focus
 
 # Host specific settings

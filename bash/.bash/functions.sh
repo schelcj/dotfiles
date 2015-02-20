@@ -108,5 +108,5 @@ function overview() {
   local end="${now}T23:59:59"
 
   gcalcli agenda $start $end
-  rtm ls list:today
+  rtm ls due:today
 }
