@@ -29,6 +29,6 @@ subscribe umichcollab www-sig
 mailboxes ~/Mail/Umich/INBOX
 mailboxes ~/Mail/Umich/alerts
 mailboxes ~/Mail/Umich/flux-support
-mailboxes ~/Mail/Umich/nagios
+#mailboxes ~/Mail/Umich/nagios
 mailboxes ~/Mail/Umich/slurm-dev
 mailboxes ~/Mail/Umich/sph-biostat-admin
