@@ -11,7 +11,7 @@ sub on_sel_grab {
 
 sub paste {
     my ($self) = @_;
-    my $content = `/usr/bin/clipit -p` ;
+    my $content = `/usr/bin/clipit -c` ;
     $self->tt_write ($content);
 }
 
