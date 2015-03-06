@@ -12,16 +12,20 @@ mod-new:
 mod-del:
 	@echo "git submodule deinit --force <path>"
 
-stow-trill:
+stow-default:
 	stow vim
 	stow bash
 	stow git
-	stow i3
-	stow mc
 	stow perl
 	stow ssh
 	stow tmux
+
+stow-trill: stow-default
+	stow i3
+	stow mc
 	stow x11
 	stow dunst
 	stow wallpapers
 	stow doing
+
+stow-csg: stow-default
