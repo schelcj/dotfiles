@@ -24,7 +24,7 @@ function! mywikis#load()
 
   augroup wiki
     autocmd BufNewFile,BufRead *.md map <Leader>wk :s/\%V\(.*\)\%V/\~\~ \1 \~\~/g<CR>:let @/ = ""<CR>
-    autocmd BufNewFile,BufRead *.md map <Leader>wp :s/\%V\(.*\)\%V/` \1 `/g<CR>:let @/ = ""<CR>
+    autocmd BufNewFile,BufRead *.md map <Leader>wc :s/\%V\(.*\)\%V/` \1 `/g<CR>:let @/ = ""<CR>
     autocmd BufNewFile,BufRead *.md map <Leader>we :s/\%V\(.*\)\%V/_\1_/g<CR>:let @/ = ""<CR>
     autocmd BufNewFile,BufRead *.md map <Leader>wb :s/\%V\(.*\)\%V/*\1*/g<CR>:let @/ = ""<CR>
     autocmd BufNewFile,BufRead *.md map <Leader>wS :VWS 
@@ -32,7 +32,11 @@ function! mywikis#load()
     "autocmd BufNewFile,BufRead *.wiki :imap hr ----
     autocmd BufNewFile,BufRead *.md set foldmethod=manual
     autocmd BufNewFile,BufRead *.md set nonu
+
     nmap <Leader>wT <Plug>VimwikiTabnewLink
     nmap <Leader>tt <Plug>VimwikiToggleListItem
+    nmap <Leader>wl :lopen<CR>
+    nmap <Leader>wn :lnext<CR>
+    nmap <Leader>wp :lprevious<CR>
   augroup end
 endfunction
