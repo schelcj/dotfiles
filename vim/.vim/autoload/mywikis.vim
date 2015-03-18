@@ -36,6 +36,7 @@ function! mywikis#load()
     nmap <Leader>wT <Plug>VimwikiTabnewLink
     nmap <Leader>tt <Plug>VimwikiToggleListItem
     nmap <Leader>wl :lopen<CR>
+    nmap <Leader>wL :lclose<CR>
     nmap <Leader>wn :lnext<CR>
     nmap <Leader>wp :lprevious<CR>
   augroup end
