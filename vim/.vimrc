@@ -54,6 +54,7 @@ map <C-K> <C-W>k<C-W>_
 au Filetype perl nmap <leader>T :%!perltidy<CR>
 
 au BufRead,BufNewFile *.t set ft=perl
+au BufRead,BufNewFile *.ep set ft=html
 filetype plugin indent on
 syntax on
 
