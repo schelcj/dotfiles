@@ -1,4 +1,30 @@
 function! mywikis#load()
+
+  function! VimwikiLinkHandler(link)
+    " 'vlocal:' or 'vfile:' schemes.  E.g.:
+    "   1) [[vfile:///~/Code/PythonProject/abc123.py]], and
+    "   2) [[vlocal:./|Wiki Home]]
+    let link = a:link
+    if link =~ "vlocal:" || link =~ "vfile:"
+      let link = link[1:]
+    else
+      return 0
+    endif
+    let [idx, scheme, path, subdir, lnk, ext, url] = 
+         \ vimwiki#base#resolve_scheme(link, 0)
+    if g:vimwiki_debug
+      echom 'LinkHandler: idx='.idx.', scheme=[v]'.scheme.', path='.path.
+           \ ', subdir='.subdir.', lnk='.lnk.', ext='.ext.', url='.url
+    endif
+    if url == ''
+      echom 'Vimwiki Error: Unable to resolve link!'
+      return 0
+    else
+      call vimwiki#base#edit_file('tabnew', url, [], 0)
+      return 1
+    endif
+  endfunction
+
   " Default wiki
   let wiki_1 = {}
   let wiki_1.path = '~/Dropbox/Wikis/Default'
@@ -29,8 +55,13 @@ function! mywikis#load()
   let wiki_4.syntax = 'markdown'
   let wiki_4.ext = '.md'
 
+  let wiki_5 = {}
+  let wiki_5.path = '~/Dropbox/Wikis/ConcertPharma'
+  let wiki_5.syntax = 'markdown'
+  let wiki_5.ext = '.md'
+
   let g:vimwiki_hl_headers = 1
-  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4]
+  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4, wiki_5]
 
   augroup wiki
     autocmd BufNewFile,BufRead *.md map <Leader>wk :s/\%V\(.*\)\%V/\~\~ \1 \~\~/g<CR>:let @/ = ""<CR>
