@@ -1,0 +1,19 @@
+name: comm
+root: ~/
+
+windows:
+  - comms:
+      layout: tiled
+      panes:
+        - email:
+          - htop
+        - nntp:
+          - htop
+        - rss:
+          - htop
+        - irc:
+          - htop
+  - 8063rd:
+    -
+  - 4077th:
+    -
