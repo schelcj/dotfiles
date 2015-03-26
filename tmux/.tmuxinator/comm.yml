@@ -1,19 +1,18 @@
 name: comm
-root: ~/
 
 windows:
   - comms:
       layout: tiled
       panes:
         - email:
-          - htop
+          - mutt
         - nntp:
-          - htop
-        - rss:
-          - htop
+          - slrn
         - irc:
-          - htop
+          - weechat
+        - rss:
+          - newsbeuter
   - 8063rd:
     -
   - 4077th:
-    -
+    - ssh 4077
