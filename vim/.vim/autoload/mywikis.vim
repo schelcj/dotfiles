@@ -75,8 +75,13 @@ function! mywikis#load()
   let wiki_8.syntax = 'markdown'
   let wiki_8.ext = '.md'
 
+  let wiki_9 = {}
+  let wiki_9.path = '~/Dropbox/Wikis/MyNorth'
+  let wiki_9.syntax = 'markdown'
+  let wiki_9.ext = '.md'
+
   let g:vimwiki_hl_headers = 1
-  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4, wiki_5, wiki_6, wiki_7, wiki_8]
+  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4, wiki_5, wiki_6, wiki_7, wiki_8, wiki_9]
 
   augroup wiki
     autocmd BufNewFile,BufRead *.md map <Leader>wk :s/\%V\(.*\)\%V/\~\~ \1 \~\~/g<CR>:let @/ = ""<CR>
