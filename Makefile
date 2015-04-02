@@ -27,5 +27,14 @@ stow-trill: stow-default
 	stow dunst
 	stow wallpapers
 	stow doing
+	stow urxvt
+
+stow-freedman: stow-default
+	stow i3
+	stow mc
+	stow x11
+	stow dunst
+	stow wallpapers
+	stow urxvt
 
 stow-csg: stow-default
