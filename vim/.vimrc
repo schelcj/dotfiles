@@ -20,6 +20,7 @@ set nu
 set backupdir=~/tmp
 set directory=~/tmp
 set cursorline
+set nocompatible
 
 if v:version >= 703
   set colorcolumn=80

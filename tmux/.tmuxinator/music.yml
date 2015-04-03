@@ -1,0 +1,13 @@
+# ~/.tmuxinator/music.yml
+
+name: music
+
+windows:
+  - pandora:
+    - pianobar
+  - somafm:
+    - ~/scripts/somafm.pl
+  - di:
+    - ~/scripts/di.pl
+  - subsonic:
+    - cd ~/Music

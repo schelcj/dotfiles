@@ -21,7 +21,7 @@ confirm-exit              yes
 display-article-progress  yes
 keep-articles-days        30
 ignore-mode               "download"
-bookmark-cmd              ~/scripts/newsbeuter/send2pocket.sh
+bookmark-cmd              ~/scripts/send2pocket.sh
 bookmark-autopilot        yes
 
 #article-sort-order date-desc
