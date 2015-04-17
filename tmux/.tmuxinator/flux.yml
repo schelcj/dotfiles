@@ -23,4 +23,4 @@ root: ~/
 
 windows:
   - flux-login:
-    - ssh flux-login
+    - ssh flux
