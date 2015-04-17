@@ -11,3 +11,5 @@ windows:
     - ~/scripts/di.pl
   - subsonic:
     - cd ~/Music
+  - songza:
+    -
