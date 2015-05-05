@@ -12,4 +12,4 @@ windows:
   - subsonic:
     - cd ~/Music
   - songza:
-    -
+    - ~/scripts/songza.sh
