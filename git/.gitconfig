@@ -2,7 +2,7 @@
   name = Chris Scheller
   email = schelcj@pobox.com
 [alias]
-  unstange = reset HEAD
+  unstage = reset HEAD
   stat = status
   ci = commit
   co = checkout

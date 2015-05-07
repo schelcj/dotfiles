@@ -166,6 +166,7 @@ for_window [class="^Gnome-calculator"] floating toggle
 for_window [class="^Pidgin"] floating toggle
 for_window [class="^Skype"] floating toggle
 for_window [class="^xpad"] floating toggle
+for_window [class="^mplayer"] move scratchpad
 
 assign [class="^Google-chrome"] 1 :www
 assign [class="^Spotify"] 9 :music

@@ -16,6 +16,7 @@ GROUP "8063rd"
   ENTRY "schelcj@hunnicutt" URL "/sh://schelcj@hunnicutt.dyndns.org/home/schelcj"
 ENDGROUP
 GROUP "Umich"
+  ENTRY "/afs/umich.edu/group/s/sph/csg/adm/adminondumbo" URL "/afs/umich.edu/group/s/sph/csg/adm/adminondumbo"
   ENTRY "IFS" URL "/afs/umich.edu/user/s/c/schelcj"
   ENTRY "flux-xfer" URL "/sftp://schelcj@flux-xfer.engin.umich.edu/home2/schelcj"
   ENTRY "csg" URL "/afs/umich.edu/group/s/sph/csg"

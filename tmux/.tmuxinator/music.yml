@@ -11,3 +11,5 @@ windows:
     - ~/scripts/di.pl
   - misc:
     - cd ~/Music
+  - songza:
+    - ~/scripts/songza.sh
