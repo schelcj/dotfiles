@@ -9,5 +9,5 @@ windows:
     - ~/scripts/somafm.pl
   - di:
     - ~/scripts/di.pl
-  - subsonic:
+  - misc:
     - cd ~/Music
