@@ -1,7 +1,7 @@
 snippet md_form
 	<div class="form-group">
 		<label for="${1:}">${2}</label>
-		<input type="text" id="$1" class="form-control" value="<%= $record->$1 %>" />
+		<input type="text" name="$1" id="$1" class="form-control" value="<%= $record->$1 %>" />
 	</div>
 
 <
