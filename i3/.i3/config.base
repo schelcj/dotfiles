@@ -166,12 +166,14 @@ for_window [class="^Gnome-calculator"] floating toggle
 for_window [class="^Pidgin"] floating toggle
 for_window [class="^Skype"] floating toggle
 for_window [class="^xpad"] floating toggle
-for_window [class="^mplayer"] move scratchpad
-for_window [class="^mpv"] move scratchpad
+#for_window [class="^mplayer"] move scratchpad
+#for_window [class="^mpv"] move scratchpad
 
 assign [class="^Google-chrome"] 1 :www
 assign [class="^Spotify"] 9 :music
 assign [class="^Clementine"] 9 :music
+assign [class="^mplayer"] 9 :music
+assign [class="^mpv"] 9 :music
 
 exec ~/.i3/autostart
 
