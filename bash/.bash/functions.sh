@@ -110,3 +110,10 @@ function overview() {
   gcalcli agenda $start $end
   rtm ls due:today
 }
+
+function mkmod() {
+  mkdir "$1"
+  mkdir "$1/files" "$1/lib" "$1/manifests" "$1/templates" "$1/tests"
+  echo "import \"*\"" > ${1}/manifests/init.pp
+}
+
