@@ -38,3 +38,6 @@ stow-freedman: stow-default
 	stow urxvt
 
 stow-csg: stow-default
+
+stow-katan: stow-default
+	stow mc
