@@ -1,8 +1,7 @@
 #!/bin/sh
 
-/usr/local/bin/dunst &
-unity-settings-daemon &
-gnome-keyring-daemon &
+/usr/bin/dunst &
+#unity-settings-daemon &
 nm-applet &
 ~/.wallpapers/change --daemon
 ~/scripts/start_dropbox.sh
