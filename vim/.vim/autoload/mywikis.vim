@@ -45,11 +45,6 @@ function! mywikis#load()
   let wiki_2.template_path = '~/Dropbox/Wikis/templates'
   let wiki_2.template_ext = '.html'
 
-  let wiki_3 = {}
-  let wiki_3.path = '~/Dropbox/Wikis/Labbooks'
-  let wiki_3.syntax = 'markdown'
-  let wiki_3.ext = '.md'
-
   let wiki_4 = {}
   let wiki_4.path = '~/Dropbox/Wikis/Glossary'
   let wiki_4.syntax = 'markdown'
@@ -61,7 +56,7 @@ function! mywikis#load()
   let wiki_5.ext = '.md'
 
   let g:vimwiki_hl_headers = 1
-  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4, wiki_5]
+  let g:vimwiki_list = [wiki_1, wiki_2, wiki_4, wiki_5]
 
   augroup wiki
     autocmd BufNewFile,BufRead *.md map <Leader>wk :s/\%V\(.*\)\%V/\~\~ \1 \~\~/g<CR>:let @/ = ""<CR>
