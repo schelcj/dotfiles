@@ -29,8 +29,8 @@ macro pager <esc>r '|/usr/games/rot13|more'\n 'run msg through rot13'
 # macro index \Cy "<limit>~y " "Limit view to label"
 
 # Follw Up - Move messages to follow up folder
-# bind editor <space> noop # makes spaces work in folder names in macros
-# macro index,pager \cu "<save-message>=Follow up<enter><enter>" "Move message to Follow Up folder"
+bind editor <space> noop # makes spaces work in folder names in macros
+macro index,pager \cu "<save-message>=Follow up<enter><enter>" "Move message to Follow Up folder"
 
 # mu search:
 macro index S "<enter-command>unset wait_key<enter><shell-escape>read -p'mu query: ' x; \
