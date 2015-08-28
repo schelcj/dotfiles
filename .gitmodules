@@ -67,3 +67,6 @@
 [submodule "vim/.vim/bundle/snippets"]
 	path = vim/.vim/bundle/snippets
 	url = git@github.com:honza/vim-snippets.git
+[submodule "vim/.vim/bundle/vim-pad"]
+	path = vim/.vim/bundle/vim-pad
+	url = git@github.com:vim-scripts/vim-pad.git
