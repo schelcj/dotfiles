@@ -17,3 +17,5 @@ alias gmail-pobox="xdg-open http://mail.google.com/?authuser=0"
 
 alias evn="xdg-open https://www.evernote.com/Home.action"
 alias trello="xdg-open https://trello.com/"
+
+alias undrain="for i in $(sstate|grep DRAIN|awk {'print $1'}); do scontrol update nodename=$i state=resume; done"
