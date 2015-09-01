@@ -4,7 +4,7 @@
 
 sub on_sel_grab {
     my $query = $_[0]->selection;
-    open (my $pipe,'| /usr/bin/clipit') or die;
+    open (my $pipe,'|', '/usr/bin/clipit') or die;
     print $pipe $query;
     close $pipe;
 }
