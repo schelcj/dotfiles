@@ -9,10 +9,10 @@ ssh-add
 clipit &
 redshift-gtk &
 xscreensaver -no-splash &
+xpad -N -h &
 
 #/opt/extras.ubuntu.com/my-weather-indicator/bin/my-weather-indicator &
 #google-drive-ocamlfuse -label umich ~/Drive/Umich/
 #fluxgui &
 #everpad &
 #hamster-indicator &
-#xpad -N -h &
