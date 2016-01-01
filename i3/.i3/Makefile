@@ -1,5 +1,5 @@
 HOSTNAME=${shell hostname}
-THEME?=tango-dark
+THEME?=ion3
 
 install:
 	@cp i3status/$(HOSTNAME).conf $(HOME)/.i3status.conf
