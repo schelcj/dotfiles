@@ -168,6 +168,7 @@ for_window [class="^gnome-calculator"] floating toggle
 for_window [class="^Pidgin"] floating toggle
 for_window [class="^Skype"] floating toggle
 for_window [class="^xpad"] floating toggle
+for_window [class="^Xmessage"] floating toggle
 #for_window [class="^mplayer"] move scratchpad
 #for_window [class="^mpv"] move scratchpad
 #for_window [class="^Nvpy"] floating toggle

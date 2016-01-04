@@ -19,3 +19,5 @@ alias gmail-pobox="xdg-open http://mail.google.com/?authuser=0"
 
 alias evn="xdg-open https://www.evernote.com/Home.action"
 alias trello="xdg-open https://trello.com/"
+
+alias ham="hamster-cli list | xmessage -file -"
