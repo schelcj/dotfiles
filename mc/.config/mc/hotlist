@@ -7,10 +7,11 @@ GROUP "Dropbox"
   ENTRY "Dropbox" URL "/home/schelcj/Dropbox"
 ENDGROUP
 GROUP "4077th"
+  ENTRY "Archives" URL "/sh://root@192.168.1.3/storage/Archives/schelcj"
+  ENTRY "root@mulcahy" URL "/sh://root@192.168.1.3/"
   ENTRY "schelcj@klinger" URL "/sh://schelcj@4077th.mooo.com/home/schelcj"
   ENTRY "schelcj@hawkeye" URL "/sh://schelcj@192.168.1.6/home/schelcj"
   ENTRY "root@klinger" URL "/sh://root@192.168.1.1/export/Media"
-  ENTRY "root@mulcahy" URL "/sh://root@batai/home/schelcj"
 ENDGROUP
 GROUP "8063rd"
   ENTRY "schelcj@hunnicutt" URL "/sh://schelcj@hunnicutt.dyndns.org/home/schelcj"
