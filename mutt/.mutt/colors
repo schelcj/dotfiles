@@ -5,6 +5,7 @@ color indicator white red
 
 color index yellow default '~v'
 color index brightred default '~f goncalo'
+color index brightred default '~t csg-topmed-status'
 color index cyan default '~l'
 #color index brightcyan default ~l ~N
 #color index brightgreen default ~N

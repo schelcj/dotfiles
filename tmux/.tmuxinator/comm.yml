@@ -10,8 +10,6 @@ windows:
           - slrn
         - irc:
           - weechat
-        - rss:
-          - newsbeuter
   - 8063rd:
     -
   - 4077th:
