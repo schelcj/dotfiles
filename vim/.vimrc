@@ -176,3 +176,11 @@ augroup end
 call mywikis#load()
 
 noremap <F3> :noh<CR>
+
+let g:pad#dir = "~/Dropbox/Notes"
+let g:pad#default_format = "markdown"
+let g:pad#default_file_extension = ".txt"
+let g:pad#window_height = "16"
+augroup PAD
+  au! BufRead,BufNewFile *.txt set nolist
+augroup end

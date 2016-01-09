@@ -78,8 +78,8 @@ URxvt*transparent: true
 URxvt*shading: 20
 URxvt*background: #2B2B2B
 URxvt*foreground: #DEDEDE
-URxvt*font: xft:Ubuntu Mono:size=13,style=regular
-URxvt*boldFont: xft:Ubuntu Mono:bold:size=13,style=bold
+URxvt*font: xft:Ubuntu Mono:size=16,style=regular
+URxvt*boldFont: xft:Ubuntu Mono:bold:size=16,style=bold
 URxvt*saveLines: 12000
 URxvt*scrollBar: false
 URxvt*scrollstyle: rxvt

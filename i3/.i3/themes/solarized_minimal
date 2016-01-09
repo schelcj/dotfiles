@@ -1,0 +1,20 @@
+# https://github.com/brennovich/dotfiles/blob/master/config/i3/config
+#
+# Solarized
+
+# $i3-theme-window
+client.focused #859900 #859900 #fdf6e3 #859900
+client.focused_inactive #073642 #073642 #eee8d5 #073642
+client.unfocused #073642 #073642 #93a1a1 #586e75
+client.urgent #d33682 #d33682 #fdf6e3 #dc322f
+
+# $i3-theme-bar
+colors {
+  separator #657b83
+  background #002b36
+  statusline #6c71c4
+  focused_workspace #859900 #859900 #fdf6e3
+  active_workspace #fdf6e3 #6c71c4 #fdf6e3
+  inactive_workspace #93a1a1 #93a1a1 #002b36
+  urgent_workspace #d33682 #d33682 #fdf6e3
+}

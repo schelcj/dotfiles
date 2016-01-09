@@ -87,21 +87,6 @@ function html2pdf() {
   html2ps $file | ps2pdf - ${filename}.pdf
 }
 
-function pack_file() {
-  local file=$1
-  local oldpwd=$(pwd)
-  local tmpdir=$(mktemp -d)
-  local trace="${tmpdir}/fatpacker.trace"
-  local packlist="${tmpdir}/packlists"
-
-  echo "Temporary results are in $tmpdir"
-
-  fatpack trace --to=$trace $file
-  fatpack packlists-for $(cat $trace) > $packlist
-  fatpack tree $(cat $packlist)
-  (fatpack file ; cat $file) > ${oldpwd}/${file}.packed.pl
-}
-
 function overview() {
   local now=$(date '+%Y-%m-%d')
   local start="${now}T00:00:00"
@@ -117,3 +102,8 @@ function mkmod() {
   echo "import \"*\"" > ${1}/manifests/init.pp
 }
 
+function undrain() {
+  for i in $(sstate|grep DRAIN|awk {'print $1'}); do
+    scontrol update nodename=$i state=resume
+  done
+}
