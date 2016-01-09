@@ -1,4 +1,5 @@
 GROUP "Dropbox"
+  ENTRY "wallpaperswide" URL "/home/schelcj/Dropbox/Wallpapers/wallpaperswide"
   ENTRY "Camera Uploads" URL "/home/schelcj/Dropbox/Camera Uploads"
   ENTRY "Wallpapers" URL "/home/schelcj/Dropbox/Wallpapers"
   ENTRY "Attachments" URL "/home/schelcj/Dropbox/Attachments"
@@ -17,6 +18,7 @@ GROUP "8063rd"
   ENTRY "schelcj@hunnicutt" URL "/sh://schelcj@hunnicutt.dyndns.org/home/schelcj"
 ENDGROUP
 GROUP "Umich"
+  ENTRY "/afs/umich.edu/user/s/c/schelcj" URL "/afs/umich.edu/user/s/c/schelcj"
   ENTRY "schelcj@dumbo" URL "/sh://schelcj@dumbo/net/dumbo/home/schelcj"
   ENTRY "/afs/umich.edu/group/s/sph/csg/adm/adminondumbo" URL "/afs/umich.edu/group/s/sph/csg/adm/adminondumbo"
   ENTRY "IFS" URL "/afs/umich.edu/user/s/c/schelcj"
