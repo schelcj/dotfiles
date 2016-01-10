@@ -16,15 +16,21 @@ folder-hook flux-support set collapse_unread=yes
 
 lists sph.staff sph.biostat.support sph.bio.staff sph.bio.admin sph-biostat-cluster-announce sph-biostat-admin sph.tech
 lists cluster-admins unix-admin unix-admins unix.admins
-lists flux-users flux-support-wg flux-support-staff flux-support flux-systems flux-liaisons cac-users cac-support
+lists flux-users flux-support-wg flux-support-staff flux-support flux-systems flux-liaisons cac-users cac-support flux-lmod
 lists slurm-dev slurm-announce
 lists umichcollab www-sig
+lists t2d-portal-dev
+lists topmed-alignment
+lists genesforgood-team
 
 subscribe sph.staff sph.biostat.support sph.bio.staff sph.bio.admin sph-biostat-cluster-announce sph-biostat-admin sph.tech
 subscribe cluster-admins unix-admin unix-admins unix.admins
-subscribe flux-users flux-support-wg flux-support-staff flux-support flux-systems flux-liaisons cac-users cac-support
+subscribe flux-users flux-support-wg flux-support-staff flux-support flux-systems flux-liaisons cac-users cac-support flux-lmod
 subscribe slurm-dev slurm-announce
 subscribe umichcollab www-sig
+subscribe t2d-portal-dev
+subscribe topmed-alignment
+subscribe genesforgood-team
 
 mailboxes ~/Mail/Umich/INBOX
 mailboxes ~/Mail/Umich/biostat
@@ -32,4 +38,5 @@ mailboxes ~/Mail/Umich/csg
 mailboxes ~/Mail/Umich/flux
 mailboxes ~/Mail/Umich/Misc
 mailboxes ~/Mail/Umich/sph
+mailboxes ~/Mail/Umich/topmed
 mailboxes ~/Mail/Umich/umich
