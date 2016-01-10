@@ -191,4 +191,8 @@ $i3-theme-window
 
 #bindsym $mod+m [title="^mc"] focus
 
+bindsym XF86AudioMute exec ~/scripte/mute
+bindsym XF86AudioPlay exec ~/scripts/pause
+bindsym XF86Calculator exec gnome-calculator
+
 # Host specific settings

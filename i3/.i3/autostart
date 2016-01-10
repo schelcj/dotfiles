@@ -1,5 +1,6 @@
 #!/bin/sh
 
+/usr/bin/blueman-adapters &
 /usr/bin/dunst &
 #unity-settings-daemon &
 nm-applet &
