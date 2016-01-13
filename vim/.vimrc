@@ -179,8 +179,9 @@ noremap <F3> :noh<CR>
 
 let g:pad#dir = "~/Dropbox/Notes"
 let g:pad#default_format = "markdown"
-let g:pad#default_file_extension = ".txt"
-let g:pad#window_height = "16"
+let g:pad#default_file_extension = ".md"
+let g:pad#window_height = "32"
 augroup PAD
-  au! BufRead,BufNewFile *.txt set nolist
+  au! BufRead,BufNewFile *.md set nolist
+  let maplocalleader=",,"
 augroup end
