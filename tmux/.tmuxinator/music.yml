@@ -3,13 +3,4 @@
 name: music
 
 windows:
-  - pandora:
-    - pianobar
-  - somafm:
-    - ~/scripts/somafm.pl
-  - di:
-    - ~/scripts/di.pl
-  - misc:
-    - cd ~/Music
-  - songza:
-    - ~/scripts/songza.sh
+  - radio:

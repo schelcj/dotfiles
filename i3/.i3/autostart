@@ -1,5 +1,6 @@
 #!/bin/sh
 
+xrdb ~/.Xdefaults
 /usr/bin/blueman-adapters &
 /usr/bin/dunst &
 #unity-settings-daemon &
