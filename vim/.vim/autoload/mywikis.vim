@@ -27,7 +27,7 @@ function! mywikis#load()
 
   " Default wiki
   let wiki_1 = {}
-  let wiki_1.path = '~/Dropbox/Wikis/Default'
+  let wiki_1.path = '~/Dropbox/Documents/Wikis/Default'
   let wiki_1.syntax = 'markdown'
   let wiki_1.ext = '.md'
   let wiki_1.diary_header = 'Journal'
@@ -37,16 +37,16 @@ function! mywikis#load()
   " Public wiki
   let wiki_2 = {}
   let wiki_2.auto_export = 1
-  let wiki_2.path = '~/Dropbox/Wikis/Public'
+  let wiki_2.path = '~/Dropbox/Documents/Wikis/Public'
   let wiki_2.path_html = '~/Dropbox/Public'
   let wiki_2.output_dir = '~/Dropbox/Public'
   let wiki_2.template_ext = '.html'
   let wiki_2.template_default = 'bootstrap3'
-  let wiki_2.template_path = '~/Dropbox/Wikis/templates'
+  let wiki_2.template_path = '~/Dropbox/Documents/Wikis/templates'
   let wiki_2.template_ext = '.html'
 
   let wiki_4 = {}
-  let wiki_4.path = '~/Dropbox/Wikis/Glossary'
+  let wiki_4.path = '~/Dropbox/Documents/Wikis/Glossary'
   let wiki_4.syntax = 'markdown'
   let wiki_4.ext = '.md'
 

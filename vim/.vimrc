@@ -177,7 +177,7 @@ call mywikis#load()
 
 noremap <F3> :noh<CR>
 
-let g:pad#dir = "~/Dropbox/Notes"
+let g:pad#dir = "~/Dropbox/Documents/Notes"
 let g:pad#default_format = "markdown"
 let g:pad#default_file_extension = ".md"
 let g:pad#window_height = "32"
