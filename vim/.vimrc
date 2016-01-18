@@ -185,3 +185,5 @@ augroup PAD
   au! BufRead,BufNewFile *.md set nolist
   let maplocalleader=",,"
 augroup end
+
+iab <expr> dts strftime("%c")
