@@ -42,8 +42,8 @@ function autoCompleteHostname() {
 function _play() {
   local mplayer_opt="$1"
   local media="$2"
-  local mplayer_cmd='mplayer -prefer-ipv4 -quiet -vo none -ao sdl -input file=/tmp/mplayer'
-  local dialog_height=25
+  local mplayer_cmd='mplayer -prefer-ipv4 -quiet -vo none -ao sdl'
+  local dialog_height=20
   local dialog_width=60
   local dialog_cmd="dialog --progressbox $dialog_height $dialog_width"
 
