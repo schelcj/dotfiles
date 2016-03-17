@@ -154,8 +154,8 @@ bindsym $mod+m exec i3-sensible-terminal -e ~/scripts/mc.sh
 bindsym XF86Launch9 exec ~/scripts/next
 bindsym XF86Launch8 exec ~/scripts/ban
 bindsym XF86Launch7 exec ~/scripts/fav
-bindsym $mod+n exec nvpy
-bindsym $mod+p exec xpad
+#bindsym $mod+n exec nvpy
+#bindsym $mod+p exec xpad
 bindsym XF86AudioRaiseVolume exec ~/scripts/volup
 bindsym XF86AudioLowerVolume exec ~/scripts/voldown
 bindsym $mod+Control+w exec ~/scripts/weather.sh
