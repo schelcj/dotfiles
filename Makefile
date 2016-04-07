@@ -41,3 +41,5 @@ stow-csg: stow-default
 
 stow-katan: stow-default
 	stow mc
+
+stow-potter: stow-default stow-freedman

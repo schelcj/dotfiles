@@ -55,7 +55,7 @@ function! mywikis#load()
 
   augroup wiki
     autocmd BufNewFile,BufRead *.md map <Leader>wk :s/\%V\(.*\)\%V/\~\~ \1 \~\~/g<CR>:let @/ = ""<CR>
-    autocmd BufNewFile,BufRead *.md map <Leader>wc :s/\%V\(.*\)\%V/` \1 `/g<CR>:let @/ = ""<CR>
+    autocmd BufNewFile,BufRead *.md map <Leader>wc :s/\%V\(.*\)\%V/`\1`/g<CR>:let @/ = ""<CR>
     autocmd BufNewFile,BufRead *.md map <Leader>we :s/\%V\(.*\)\%V/_\1_/g<CR>:let @/ = ""<CR>
     autocmd BufNewFile,BufRead *.md map <Leader>wb :s/\%V\(.*\)\%V/*\1*/g<CR>:let @/ = ""<CR>
     autocmd BufNewFile,BufRead *.md map <Leader>wS :VWS 
