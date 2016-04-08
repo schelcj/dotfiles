@@ -5,3 +5,10 @@ snippet sub
 		${0}
 	}
 
+snippet haslazy
+	has ${1:attribute} => (
+		is => '${2:ro|rw}',
+		isa => '${3:Str|Int|HashRef|ArrayRef|etc}',
+		lazy => 1,
+		builder => '_build_$1',
+	);
