@@ -70,3 +70,9 @@
 [submodule "vim/.vim/bundle/vim-pad"]
 	path = vim/.vim/bundle/vim-pad
 	url = git@github.com:vim-scripts/vim-pad.git
+[submodule "vim/.vim/bundle/vim-orgmode"]
+	path = vim/.vim/bundle/vim-orgmode
+	url = git@github.com:jceb/vim-orgmode.git
+[submodule "vim/.vim/bundle/vim-speeddating"]
+	path = vim/.vim/bundle/vim-speeddating
+	url = git@github.com:tpope/vim-speeddating.git
