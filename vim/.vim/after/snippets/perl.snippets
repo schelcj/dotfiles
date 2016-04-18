@@ -6,9 +6,34 @@ snippet sub
 	}
 
 snippet haslazy
-	has ${1:attribute} => (
+	has '${1:attribute}' => (
 		is => '${2:ro|rw}',
 		isa => '${3:Str|Int|HashRef|ArrayRef|etc}',
 		lazy => 1,
 		builder => '_build_$1',
 	);
+
+snippet appcmd
+	package ${1:package}::Command::${2:subcommand};
+
+	use $1 -command;
+
+	sub opt_spec {
+	  return ();
+	}
+
+	sub validate_args {
+	  my ($self, $opts, $args) = @_;
+	}
+
+	sub execute {
+	  my ($self, $opts, $args) = @_;
+	}
+
+	1;
+
+	__END__
+
+	=head1
+
+	$1::Command::$2 - ${3:description}
