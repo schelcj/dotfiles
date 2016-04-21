@@ -107,3 +107,17 @@ windows:
     - ssh cn033
   - cn034:
     - ssh cn034
+  - cn035:
+    - ssh cn035
+  - cn036:
+    - ssh cn036
+  - cn037:
+    - ssh cn037
+  - cn038:
+    - ssh cn038
+  - cn039:
+    - ssh cn039
+  - cn040:
+    - ssh cn040
+  - cn041:
+    - ssh cn041
