@@ -4,4 +4,22 @@ snippet md_form
 		<input type="text" name="$1" id="$1" class="form-control" value="<%= $record->$1 %>" />
 	</div>
 
-<
+snippet bs_modal
+	<div id="${1:name}-modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title">${2:title}</h3>
+				</div>
+
+				<div class="modal-body">
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
