@@ -34,9 +34,15 @@ subscribe genesforgood-team
 
 mailboxes ~/Mail/Umich/INBOX
 mailboxes ~/Mail/Umich/biostat
+mailboxes ~/Mail/Umich/biostat.cluster
+mailboxes ~/Mail/Umich/biostat.cluster.nagios
 mailboxes ~/Mail/Umich/csg
+mailboxes ~/Mail/Umich/csg.gecco
+mailboxes ~/Mail/Umich/csg.inpsyght
+mailboxes ~/Mail/Umich/csg.topmed
+mailboxes ~/Mail/Umich/csg.topmed.alignment
 mailboxes ~/Mail/Umich/flux
+mailboxes ~/Mail/Umich/flux.support
 mailboxes ~/Mail/Umich/Misc
 mailboxes ~/Mail/Umich/sph
-mailboxes ~/Mail/Umich/topmed
 mailboxes ~/Mail/Umich/umich
