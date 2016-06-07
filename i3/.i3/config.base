@@ -182,12 +182,6 @@ assign [class="^mpv"] 9 :music
 
 exec ~/.i3/autostart
 
-bar {
-  tray_output primary
-  status_command i3status
-  $i3-theme-bar
-}
-
 $i3-theme-window
 
 #bindsym $mod+m [title="^mc"] focus
