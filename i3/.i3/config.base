@@ -174,11 +174,11 @@ for_window [class="^Xmessage"] floating toggle
 #for_window [class="^Nvpy"] floating toggle
 
 assign [class="^Google-chrome"] 1 :www
-assign [class="^Slack"] 8 :slack
-assign [class="^Spotify"] 9 :music
-assign [class="^Clementine"] 9 :music
-assign [class="^mplayer"] 9 :music
-assign [class="^mpv"] 9 :music
+#assign [class="^Slack"] 8 :slack
+#assign [class="^Spotify"] 9 :music
+#assign [class="^Clementine"] 9 :music
+#assign [class="^mplayer"] 9 :music
+#assign [class="^mpv"] 9 :music
 
 exec ~/.i3/autostart
 
