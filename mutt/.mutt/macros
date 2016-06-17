@@ -8,6 +8,9 @@ macro index <F9> "<change-folder>~/Mail/Pobox/INBOX<return>" "change to my gmail
 macro index <F10> "<change-folder>~/Mail/Umich/INBOX<return>" "change to my umich inbox"
 #macro index S "<shell-escape>mairix " "Run mairix search"
 #macro index <esc>s "<change-folder-readonly>~/Mail/Search<return>" "Change to search result folder"
+macro index \R '<read-thread><collapse-thread><next-unread>' 'Mark the current thread as read'
+macro index '{' ':set my_oldcollapse_unread=$collapse_unread<enter>:set collapse_unread=yes<enter><collapse-thread>:set collapse_unread=$my_oldcollapse_unread<enter>' 'Collapse thread.'
+macro index '}' '{' '(Un)collapse thread.'
 
 macro pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts"
 #macro pager \cb "<pipe-message> urlscan<Enter>" "load urlview with current urls"
