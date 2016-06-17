@@ -1,4 +1,4 @@
-alias set_primary_display="xrandr --output DP-2 --primary"
+alias set_primary_display="xrandr --output DVI-0 --primary"
 alias wifi_off="nmcli r wifi off"
 alias wifi_on="nmcli r wifi on"
 alias vpn_off="nmcli c down id 'Biostat'"

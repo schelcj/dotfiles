@@ -43,3 +43,11 @@ stow-katan: stow-default
 	stow mc
 
 stow-potter: stow-default stow-freedman
+
+stow-ressik: stow-default
+	stow i3
+	stow mc
+	stow x11
+	stow dunst
+	stow wallpapers
+	stow urxvt
