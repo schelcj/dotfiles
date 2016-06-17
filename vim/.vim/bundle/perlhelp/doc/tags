@@ -1,0 +1,13 @@
+:PerlFAQ	perlhelp.txt	/*:PerlFAQ*
+:PerlFunc	perlhelp.txt	/*:PerlFunc*
+:PerlHelp	perlhelp.txt	/*:PerlHelp*
+:PerlMod	perlhelp.txt	/*:PerlMod*
+:PerlVar	perlhelp.txt	/*:PerlVar*
+perlhelp	perlhelp.txt	/*perlhelp*
+perlhelp-bugs	perlhelp.txt	/*perlhelp-bugs*
+perlhelp-contents	perlhelp.txt	/*perlhelp-contents*
+perlhelp-functions	perlhelp.txt	/*perlhelp-functions*
+perlhelp-install	perlhelp.txt	/*perlhelp-install*
+perlhelp-manual	perlhelp.txt	/*perlhelp-manual*
+perlhelp-mappings	perlhelp.txt	/*perlhelp-mappings*
+perlhelp.txt	perlhelp.txt	/*perlhelp.txt*

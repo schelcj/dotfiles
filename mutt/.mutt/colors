@@ -1,0 +1,50 @@
+color hdrdefault yellow default
+color header brightyellow default 'subject:'
+color header brightyellow default 'From:'
+color indicator white red
+
+color index yellow default '~v'
+color index brightred default '~f goncalo'
+color index brightred default '~t csg-topmed-status'
+color index cyan default '~l'
+#color index brightcyan default ~l ~N
+#color index brightgreen default ~N
+color index green default ~O
+
+color index brightyellow default '~t schellers@pobox.com'
+
+color index brightmagenta default '~f cac-support@umich.edu ~b "Chris Scheller"'
+color index brightmagenta default '~f cac-support@umich.edu ~b "scheller"'
+color index brightmagenta default '~f cac-support@umich.edu ~b "SPH Support"'
+color index brightmagenta default '~f cac-support@umich.edu ~b "Department: Epidemiology Department"'
+color index brightmagenta default '~f cac-support@umich.edu ~b "Department: Biostatistics Department"'
+color index brightmagenta default '~f cac-support@umich.edu ~b "Department: Health Management and Policy"'
+color index brightmagenta default '~f cac-support@umich.edu ~b "Department: Environmental Health Sciences"'
+color index brightmagenta default '~f cac-support@umich.edu ~b "kardia"'
+color index brightmagenta default '~f cac-support@umich.edu ~b "stenzesl"'
+color index brightred default "~b 'Unattended upgrade returned: False'"
+color index brightgreen default "~b 'All upgrades installed'"
+color index brightred default "~s 'Unscheduled Outage'"
+color index brightred default "~s 'Emergency Maintenance'"
+color index brightgreen default "~s 'Service Restored'"
+color index brightcyan default "~s 'Maintenance Completed'"
+
+color body brightmagenta default "(ftp|http|https)://[^ ]+"
+color message white default
+color tilde white default
+color signature brightyellow default
+color quoted green default
+
+color body brightmagenta default "(ftp|http|https)://[^ ]+"
+color message white default
+color tilde white default
+color signature brightyellow default
+color quoted green default
+color quoted1 yellow default
+color quoted2 red default
+color normal default default
+color error brightyellow default
+color status white blue
+color tree brightgreen default
+color attachment brightmagenta default
+color markers default white

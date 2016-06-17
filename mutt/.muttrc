@@ -1,0 +1,59 @@
+set use_from
+set envelope_from
+set fast_reply=yes
+set mask='^\.*'
+set delete
+set beep=no
+set beep_new=no
+set postpone=ask-no
+set markers=no
+set smart_wrap=no
+set editor="exec /usr/bin/vim -u ~/.vimmailrc --noplugin"
+set abort_unmodified=no
+set abort_nosubject=no
+set query_command = "echo ; /bin/run-parts -a '%s' ~/.mutt/address-providers/|grep '@'|sort -u"
+#set query_command="abook --mutt-query '%s'"
+#set query_command="mu cfind --muhome=~/.mu-sent-index --format=mutt-ab '%s'"
+#set query_command="goobook query '%s'"
+set mail_check=60
+set wait_key=no
+set mark_old=no
+#set mime_forward=yes
+#set pager_index_lines=5
+
+set date_format="%b, %d %X"
+set folder_format = '%2C %N %f %> %d'
+#set index_format = '%4C %Z %{%b %d %y} %-15.15F (%4c) %M  %s'
+#set index_format = '%4C %M %Z %-45.45s (%.20Y) [%11.11F] %d'
+set index_format = '%4C %M %Z %-45.45s [%11.11F] %d'
+set forward_format = '%s (fwd)'
+set attribution = '%n wrote on %d:'
+
+set sort=threads
+set sort_aux=date-sent
+set sort_re=yes
+set strict_threads=yes
+set collapse_unread=no
+
+set certificate_file="~/.cache/mutt/certificates"
+set header_cache=~/.cache/mutt/headers
+set message_cachedir=~/.cache/mutt/messages
+
+auto_view text/html
+alternative_order text/plain text/html text/enriched
+
+source ~/.mutt/aliases
+source ~/.mutt/defaults
+source ~/.mutt/headers
+source ~/.mutt/keys
+source ~/.mutt/macros
+source ~/.mutt/colors
+source ~/.mutt/hooks
+#source ~/.mutt/gpg
+source ~/.mutt/crypto
+source ~/.mutt/sidebar
+
+# Profiles
+source ~/.mutt/pobox
+source ~/.mutt/umich
+# source ~/.mutt/avlug
