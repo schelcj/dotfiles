@@ -1,4 +1,35 @@
-"colorscheme darkblue
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vimwiki/vimwiki'
+Plugin 'vimoutliner/vimoutliner'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'corntrace/bufexplorer'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-scripts/Dpaste.com-Plugin'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-git'
+Plugin 'vim-scripts/gnupg'
+Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-markdown'
+Plugin 'scrooloose/nerdtree'
+Plugin 'garbas/vim-snipmate'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'godlygeek/tabular'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'tomtom/tlib_vim'
+Plugin 'vim-scripts/vcscommand.vim'
+Plugin 'vim-perl/vim-perl'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'honza/vim-snippets'
+Plugin 'vim-scripts/vim-pad'
+Plugin 'jceb/vim-orgmode'
+Plugin 'tpope/vim-speeddating'
+call vundle#end()
+filetype plugin indent on
+
 syn on
 set shell=/bin/bash
 set ts=2
@@ -20,7 +51,6 @@ set nu
 set backupdir=~/tmp
 set directory=~/tmp
 set cursorline
-set nocompatible
 
 if v:version >= 703
   set colorcolumn=80
@@ -31,7 +61,6 @@ autocmd FileType javascript set commentstring=\ //\ %s
 autocmd FileType diff set foldmethod=manual
 autocmd FileType actionscript set syntax=actionscript
 
-filetype on
 filetype indent on
 filetype plugin on
 
@@ -67,9 +96,6 @@ map <Leader><Left>  :tabp<CR>
 " NERDTree settings
 nmap <Leader>N :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
-
-call pathogen#infect()
-Helptags
 
 set background=dark
 let g:solarized_termcolors=256
@@ -176,14 +202,5 @@ augroup end
 call mywikis#load()
 
 noremap <F3> :noh<CR>
-
-let g:pad#dir = "~/Dropbox/Documents/Notes"
-let g:pad#default_format = "markdown"
-let g:pad#default_file_extension = ".md"
-let g:pad#window_height = "32"
-augroup PAD
-  au! BufRead,BufNewFile *.md set nolist
-  let maplocalleader=",,"
-augroup end
 
 iab <expr> dts strftime("%c")

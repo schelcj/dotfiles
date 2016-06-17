@@ -182,6 +182,22 @@ assign [class="^Google-chrome"] 1 :www
 
 exec ~/.i3/autostart
 
+bar {
+  tray_output primary
+  status_command i3status
+  $i3-theme-bar
+}
+
+=======
+#assign [class="^Slack"] 8 :slack
+#assign [class="^Spotify"] 9 :music
+#assign [class="^Clementine"] 9 :music
+#assign [class="^mplayer"] 9 :music
+#assign [class="^mpv"] 9 :music
+
+exec ~/.i3/autostart
+
+>>>>>>> 0b437498ca5b7754a161662cd22a2b8556ff1953
 $i3-theme-window
 
 #bindsym $mod+m [title="^mc"] focus
