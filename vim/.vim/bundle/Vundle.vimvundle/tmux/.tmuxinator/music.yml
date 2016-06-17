@@ -1,7 +1,0 @@
-# ~/.tmuxinator/music.yml
-
-name: music
-
-windows:
-  - radio:
-    -
