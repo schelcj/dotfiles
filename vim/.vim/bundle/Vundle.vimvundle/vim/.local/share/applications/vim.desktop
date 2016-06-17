@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=Edit file in Vim
+Exec=x-terminal-emulator -e vim %f
+GenericName=Text Editor
+Hidden=false
+Icon=vim
+Name=Vim
+Terminal=false
+Type=Application
+Version=1.0
+Categories=Utility;TextEditor;
+StartupNotify=false
+MimeType=text/plain;

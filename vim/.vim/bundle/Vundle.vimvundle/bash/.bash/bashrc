@@ -1,0 +1,27 @@
+source ${HOME}/.bash/profile.sh
+source ${HOME}/.bash/aliases.sh
+source ${HOME}/.bash/functions.sh
+source ${HOME}/.bash/rtm.sh
+source ${HOME}/.bash/perl.sh
+source ${HOME}/.bash/go.sh
+source ${HOME}/.bash/geeknote.sh
+source ${HOME}/.bash/dropbox.sh
+source ${HOME}/.bash/umich.sh
+
+# case "$(hostname)" in
+#   hunnicutt)
+#     source $HOME/.bash/modules
+#     source $HOME/.bash/modules_bash_completion
+#     ;;
+#   mulcahy)
+#     source /etc/profile.d/modules
+#     source /etc/profile.d/modules_bash_completion
+#     ;;
+#   trill)
+#     source /etc/profile.d/modules.sh
+#     source ${HOME}/privatemodules/default
+#     ;;
+#   freedman)
+#     source ${HOME}/privatemodules/default
+#     ;;
+# esac

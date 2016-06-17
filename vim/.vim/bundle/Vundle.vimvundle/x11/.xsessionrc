@@ -1,0 +1,2 @@
+export PATH=${HOME}/bin:${HOME}/scripts:$PATH
+echo "Starting at $(date)" >> ~/.i3/logfile

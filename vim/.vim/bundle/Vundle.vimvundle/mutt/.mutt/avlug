@@ -1,0 +1,14 @@
+folder-hook 'Avlug/*' 'set folder="~/Mail/Avlug/"'
+folder-hook 'Avlug/*' 'set spoolfile="+INBOX"'
+folder-hook 'Avlug/*' 'set record="+INBOX.Sent/"'
+folder-hook 'Avlug/*' 'set from="schelcj@avlug.org"'
+folder-hook 'Avlug/*' 'set signature="~/.mutt/signature.default|"'
+folder-hook 'Avlug/*' 'set strict_threads=yes'
+folder-hook 'Avlug/*' 'set sort_re=yes'
+folder-hook 'Avlug/*' 'color status black green'
+folder-hook 'Avlug/*' 'color indicator black green'
+folder-hook 'Avlug/*' 'macro index G "<shell-escape>offlineimap -u basic -1 -o -a Avlug<return>" "Fetch mail from my Pobox account"'
+#folder-hook 'Avlug/*' 'macro pager S "<shell-escape>mairix -f ~/Dropbox/dot-files/mairix/mairixrc-avlug " "Run mairix search"'
+#folder-hook 'Avlug/*' 'macro index S "<shell-escape>mairix -f ~/Dropbox/dot-files/mairix/mairixrc-avlug " "Run mairix search"'
+
+mailboxes ~/Mail/Avlug/INBOX

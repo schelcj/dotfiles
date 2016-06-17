@@ -1,0 +1,39 @@
+macro index , c?<tab> 'display mailbox list'
+macro index C c\n 'switch to next folder with unread messages'
+macro index \Cr ':source ~/.muttrc'\n 're-source the muttrc'
+macro index \Cd <delete-pattern>~A<return> 'Delete all message in folder'
+macro index a "<pipe-message>goobook add<return>" "add the sender address to Google contacts"
+macro index <F8> "<change-folder>~/Mail/Avlug/INBOX<return>" "change to my avlug inbox"
+macro index <F9> "<change-folder>~/Mail/Pobox/INBOX<return>" "change to my gmail inbox"
+macro index <F10> "<change-folder>~/Mail/Umich/INBOX<return>" "change to my umich inbox"
+#macro index S "<shell-escape>mairix " "Run mairix search"
+#macro index <esc>s "<change-folder-readonly>~/Mail/Search<return>" "Change to search result folder"
+
+macro pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts"
+#macro pager \cb "<pipe-message> urlscan<Enter>" "load urlview with current urls"
+macro pager <esc>r '|/usr/games/rot13|more'\n 'run msg through rot13'
+#macro pager S "<shell-escape>mairix " "Run mairix search"
+#macro pager <esc>s "<change-folder-readonly>~/Mail/Search<return>" "Change to search result folder"
+
+#macro index <F6> "<shell-escape>mairix <enter><change-folder-readonly>~/Mail/Search<return>"        
+#macro pager <f8> "<sync-mailbox><toggle-write><shell-escape>mairix \"$@\"<enter><change-folder>=findex<enter><sort>t<delete-pattern>~=<enter><sync-mailbox>"        
+
+#macro index,pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+#macro attach,compose \cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+
+# labels
+# macro index y "<enter-command>set editor='~/bin/editlabel append'<return> <edit><sync-mailbox><next-undeleted> <enter-command>set editor=vim<return>" "Append label"
+# macro pager y "<enter-command>set editor='~/bin/editlabel append'<return> <edit><sync-mailbox><next-undeleted> <enter-command>set editor=vim<return>" "Append label"
+# macro index Y "<enter-command>set editor='~/bin/editlabel menu'<return> <edit><sync-mailbox><next-undeleted> <enter-command>set editor=vim<return>" "Edit labels"
+# macro pager Y "<enter-command>set editor='~/bin/editlabel menu'<return> <edit><sync-mailbox><next-undeleted> <enter-command>set editor=vim<return>" "Edit labels"
+# macro index \Cy "<limit>~y " "Limit view to label"
+
+# Follw Up - Move messages to follow up folder
+bind editor <space> noop # makes spaces work in folder names in macros
+macro index,pager \cu "<save-message>=Follow up<enter><enter>" "Move message to Follow Up folder"
+
+# mu search:
+macro index S "<enter-command>unset wait_key<enter><shell-escape>read -p'mu query: ' x; \
+  mu find --clearlinks --linksdir ~/Mail/Search --format links \$x<enter>\ <change-folder-readonly>~/Mail/Search\n" "mu find"
+
+macro index <Esc>s "<change-folder-readonly>~/Mail/Search\n" "display mu-find results"

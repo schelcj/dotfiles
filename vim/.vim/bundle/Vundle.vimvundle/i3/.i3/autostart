@@ -1,0 +1,20 @@
+#!/bin/sh
+
+xrdb ~/.Xdefaults
+#/usr/bin/blueman-adapters &
+/usr/bin/dunst &
+unity-settings-daemon &
+nm-applet &
+~/.wallpapers/change --daemon
+~/scripts/start_dropbox.sh
+ssh-add
+clipit &
+redshift-gtk &
+xscreensaver -no-splash &
+xpad -N -h &
+hamster-indicator &
+
+#/opt/extras.ubuntu.com/my-weather-indicator/bin/my-weather-indicator &
+#google-drive-ocamlfuse -label umich ~/Drive/Umich/
+#fluxgui &
+#everpad &
