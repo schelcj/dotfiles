@@ -10,7 +10,5 @@ windows:
           - slrn
         - irc:
           - weechat
-  - 8063rd:
-    -
   - 4077th:
-    - ssh 4077
+    -

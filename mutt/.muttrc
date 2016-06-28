@@ -34,6 +34,7 @@ set sort_aux=date-sent
 set sort_re=yes
 set strict_threads=yes
 set collapse_unread=no
+set uncollapse_jump    # jumps to first unread msg of thread on uncollapse
 
 set certificate_file="~/.cache/mutt/certificates"
 set header_cache=~/.cache/mutt/headers

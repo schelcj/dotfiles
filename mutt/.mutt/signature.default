@@ -4,9 +4,9 @@
 cat<<EOF
 Chris Scheller | http://www.pobox.com/~schelcj
 ----------------------------------------------
-$(/usr/games/fortune -s)
 EOF
 
+# $(/usr/games/fortune -s)
 
 #| "Ubuntu"   -- an African word, meaning "Slackware is too hard for me"      |
 #| "Mandriva" -- a French word, meaning "Slackware is too hard for me"        |

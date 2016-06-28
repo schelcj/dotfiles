@@ -28,7 +28,8 @@ realdelete = no
 remotehost = imap.googlemail.com
 remoteuser = schelcj@gmail.com
 remoteport = 993
-folderfilter = lambda foldername: not re.search('(^Personal|Receipts|Travel|Work|All Mail|Important|Spam|Starred|Trash|Drafts|Backup|Priority|Misc|Notes)',foldername)
+folderfilter = lambda foldername: not re.search('(^Personal|Receipts|Travel|Work|All Mail|Important|Spam|Starred|Trash|Drafts|Backup|Priority|Misc|Notes|Scheduled)',foldername)
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 
 [Account Umich]
 autorefresh = 5
@@ -46,7 +47,8 @@ realdelete = no
 remotehost = imap.gmail.com
 remoteuser = schelcj@umich.edu
 remoteport = 993
-folderfilter = lambda foldername: not re.search('(^Personal|Receipts|Travel|Work|All Mail|Important|Spam|Starred|Trash|Drafts|Backup|Priority|Notes)',foldername)
+folderfilter = lambda foldername: not re.search('(^Personal|Receipts|Travel|Work|All Mail|Important|Spam|Starred|Trash|Drafts|Backup|Priority|Notes|Scheduled)',foldername)
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 
 [Account Avlug]
 autorefresh = 5

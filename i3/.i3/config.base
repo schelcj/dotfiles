@@ -27,7 +27,6 @@ bindsym $mod+Shift+Q kill
 #bindsym $mod+d exec dmenu_run -nb \#484e50 -nf \#292d2e -sb \#757575
 #bindsym $mod+d exec dmenu_run -nb \#484e50 -nf \#ffffff -sb \#4c7899 -sf \#ffffff
 bindsym $mod+d exec dmenu_run_aliases -nb \#484e50 -nf \#ffffff -sb \#4c7899 -sf \#ffffff
-#bindsym $mod+d exec ~/scripts/rofi.sh
 
 # change focus
 bindsym $mod+j focus left
@@ -130,7 +129,7 @@ mode "resize" {
   bindsym Right resize shrink right 10 px or 10 ppt
   bindsym Shift+Right resize grow   right 10 px or 10 ppt
 
-          # back to normal: Enter or Escape
+  # back to normal: Enter or Escape
   bindsym Return mode "default"
   bindsym Escape mode "default"
 }
@@ -146,16 +145,11 @@ bindsym $mod+Mod4+r move workspace to output right
 bindsym $mod+Control+l exec ~/scripts/lock.sh
 bindsym Mod4+w exec ~/.wallpapers/change
 bindsym Mod4+g exec gvim
-#bindsym $mod+q exec quickswitch.py --dmenu 'dmenu -i -l 20'
-#bindsym $mod+Escape exec quickswitch.py --dmenu 'dmenu -i -l 20' --workspaces
-#bindsym $mod+grave exec quickswitch.py --dmenu 'dmenu -i -l 20' --scratchpad
 bindsym $mod+grave exec ~/scripts/rofi.sh
 bindsym $mod+m exec i3-sensible-terminal -e ~/scripts/mc.sh
 bindsym XF86Launch9 exec ~/scripts/next
 bindsym XF86Launch8 exec ~/scripts/ban
 bindsym XF86Launch7 exec ~/scripts/fav
-#bindsym $mod+n exec nvpy
-#bindsym $mod+p exec xpad
 bindsym XF86AudioRaiseVolume exec ~/scripts/volup
 bindsym XF86AudioLowerVolume exec ~/scripts/voldown
 bindsym $mod+Control+w exec ~/scripts/weather.sh
@@ -169,38 +163,12 @@ for_window [class="^Pidgin"] floating toggle
 for_window [class="^Skype"] floating toggle
 for_window [class="^xpad"] floating toggle
 for_window [class="^Xmessage"] floating toggle
-#for_window [class="^mplayer"] move scratchpad
-#for_window [class="^mpv"] move scratchpad
-#for_window [class="^Nvpy"] floating toggle
 
 assign [class="^Google-chrome"] 1 :www
-#assign [class="^Slack"] 8 :slack
-#assign [class="^Spotify"] 9 :music
-#assign [class="^Clementine"] 9 :music
-#assign [class="^mplayer"] 9 :music
-#assign [class="^mpv"] 9 :music
 
 exec ~/.i3/autostart
 
-bar {
-  tray_output primary
-  status_command i3status
-  $i3-theme-bar
-}
-
-=======
-#assign [class="^Slack"] 8 :slack
-#assign [class="^Spotify"] 9 :music
-#assign [class="^Clementine"] 9 :music
-#assign [class="^mplayer"] 9 :music
-#assign [class="^mpv"] 9 :music
-
-exec ~/.i3/autostart
-
->>>>>>> 0b437498ca5b7754a161662cd22a2b8556ff1953
 $i3-theme-window
-
-#bindsym $mod+m [title="^mc"] focus
 
 bindsym XF86AudioMute exec ~/scripte/mute
 bindsym XF86AudioPlay exec ~/scripts/pause
