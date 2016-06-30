@@ -21,3 +21,4 @@ alias evn="xdg-open https://www.evernote.com/Home.action"
 alias trello="xdg-open https://trello.com/"
 
 alias ham="hamster-cli list | xmessage -file -"
+alias mux="tmuxinator"
