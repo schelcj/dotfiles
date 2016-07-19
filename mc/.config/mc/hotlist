@@ -28,6 +28,7 @@ GROUP "Umich"
   ENTRY "schelcj@katan" URL "/sh://schelcj@katan/home/schelcj"
 ENDGROUP
 GROUP "Concert"
+  ENTRY "Client Directory" URL "/home/schelcj/Clients/concert"
   ENTRY "cscheller@alba" URL "/sh://cscheller@alba/home/CONCERTPHARMA/cscheller"
 ENDGROUP
 GROUP "FTP Sites"

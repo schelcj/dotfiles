@@ -1,26 +1,20 @@
 function! mywikis#load()
-
   function! VimwikiLinkHandler(link)
-    " 'vlocal:' or 'vfile:' schemes.  E.g.:
-    "   1) [[vfile:///~/Code/PythonProject/abc123.py]], and
-    "   2) [[vlocal:./|Wiki Home]]
+    " Use Vim to open external files with the 'vfile:' scheme.  E.g.:
+    "   1) [[vfile:~/Code/PythonProject/abc123.py]]
+    "   2) [[vfile:./|Wiki Home]]
     let link = a:link
-    if link =~ "vlocal:" || link =~ "vfile:"
+    if link =~# '^vfile:'
       let link = link[1:]
     else
       return 0
     endif
-    let [idx, scheme, path, subdir, lnk, ext, url] = 
-         \ vimwiki#base#resolve_scheme(link, 0)
-    if g:vimwiki_debug
-      echom 'LinkHandler: idx='.idx.', scheme=[v]'.scheme.', path='.path.
-           \ ', subdir='.subdir.', lnk='.lnk.', ext='.ext.', url='.url
-    endif
-    if url == ''
-      echom 'Vimwiki Error: Unable to resolve link!'
+    let link_infos = vimwiki#base#resolve_link(link)
+    if link_infos.filename == ''
+      echomsg 'Vimwiki Error: Unable to resolve link!'
       return 0
     else
-      call vimwiki#base#edit_file('tabnew', url, [], 0)
+      exe 'tabnew ' . fnameescape(link_infos.filename)
       return 1
     endif
   endfunction
@@ -45,13 +39,16 @@ function! mywikis#load()
   let wiki_2.template_path = '~/Dropbox/Documents/Wikis/templates'
   let wiki_2.template_ext = '.html'
 
+  let wiki_3 = {}
+  let wiki_3.path = '~/Dropbox/Documents/Wikis/New'
+
   let wiki_4 = {}
   let wiki_4.path = '~/Dropbox/Documents/Wikis/Glossary'
   let wiki_4.syntax = 'markdown'
   let wiki_4.ext = '.md'
 
   let g:vimwiki_hl_headers = 1
-  let g:vimwiki_list = [wiki_1, wiki_2, wiki_4]
+  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4]
 
   augroup wiki
     autocmd BufNewFile,BufRead *.md map <Leader>wk :s/\%V\(.*\)\%V/\~\~ \1 \~\~/g<CR>:let @/ = ""<CR>

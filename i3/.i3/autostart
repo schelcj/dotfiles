@@ -15,6 +15,7 @@ xpad -N -h &
 hamster-indicator &
 
 #/opt/extras.ubuntu.com/my-weather-indicator/bin/my-weather-indicator &
-#google-drive-ocamlfuse -label umich ~/Drive/Umich/
+google-drive-ocamlfuse -label umich ~/Drive/Umich/
+google-drive-ocamlfuse -label pobox ~/Drive/Pobox/
 #fluxgui &
 #everpad &

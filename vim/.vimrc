@@ -27,6 +27,7 @@ Plugin 'vim-scripts/vim-pad'
 Plugin 'jceb/vim-orgmode'
 Plugin 'tpope/vim-speeddating'
 Plugin 'perlhelp.vim'
+Plugin 'scrooloose/syntastic'
 call vundle#end()
 filetype plugin indent on
 
