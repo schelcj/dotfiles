@@ -22,8 +22,6 @@ function! mywikis#load()
   " Default wiki
   let wiki_1 = {}
   let wiki_1.path = '~/Dropbox/Documents/Wikis/Default'
-  let wiki_1.syntax = 'markdown'
-  let wiki_1.ext = '.md'
   let wiki_1.diary_header = 'Journal'
   let wiki_1.diary_index = 'journal'
   let wiki_1.diary_rel_path = 'journal/'
@@ -39,16 +37,12 @@ function! mywikis#load()
   let wiki_2.template_path = '~/Dropbox/Documents/Wikis/templates'
   let wiki_2.template_ext = '.html'
 
+  " Work Glossary(mostly genetic stuffs)
   let wiki_3 = {}
-  let wiki_3.path = '~/Dropbox/Documents/Wikis/New'
-
-  let wiki_4 = {}
-  let wiki_4.path = '~/Dropbox/Documents/Wikis/Glossary'
-  let wiki_4.syntax = 'markdown'
-  let wiki_4.ext = '.md'
+  let wiki_3.path = '~/Dropbox/Documents/Wikis/Glossary'
 
   let g:vimwiki_hl_headers = 1
-  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4]
+  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3]
 
   augroup wiki
     autocmd BufNewFile,BufRead *.md map <Leader>wk :s/\%V\(.*\)\%V/\~\~ \1 \~\~/g<CR>:let @/ = ""<CR>
