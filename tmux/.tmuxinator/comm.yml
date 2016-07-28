@@ -10,5 +10,7 @@ windows:
           - slrn
         - irc:
           - weechat
+        - rss:
+          - newsbeuter
   - 4077th:
     -

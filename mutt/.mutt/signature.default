@@ -2,8 +2,8 @@
 
 
 cat<<EOF
-Chris Scheller | http://www.pobox.com/~schelcj
-----------------------------------------------
+Chris Scheller
+http://www.pobox.com/~schelcj
 EOF
 
 # $(/usr/games/fortune -s)
