@@ -1,13 +1,13 @@
 source ${HOME}/.bash/profile.sh
 source ${HOME}/.bash/aliases.sh
 source ${HOME}/.bash/functions.sh
-#source ${HOME}/.bash/rtm.sh
+source ${HOME}/.bash/rtm.sh
 source ${HOME}/.bash/perl.sh
 source ${HOME}/.bash/go.sh
 source ${HOME}/.bash/geeknote.sh
 source ${HOME}/.bash/dropbox.sh
 source ${HOME}/.bash/umich.sh
-source ${HOME}/.bash/task.sh
+#source ${HOME}/.bash/task.sh
 
 # case "$(hostname)" in
 #   hunnicutt)
