@@ -41,8 +41,12 @@ function! mywikis#load()
   let wiki_3 = {}
   let wiki_3.path = '~/Dropbox/Documents/Wikis/Glossary'
 
+  " Labbooks (beit personal or work...don't care)
+  let wiki_4 = {}
+  let wiki_4.path = '~/Dropbox/Documents/Wikis/Labbooks'
+
   let g:vimwiki_hl_headers = 1
-  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3]
+  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4]
 
   augroup wiki
     autocmd BufNewFile,BufRead *.wiki map <Leader>wk :s/\%V\(.*\)\%V/\~\~ \1 \~\~/g<CR>:let @/ = ""<CR>
