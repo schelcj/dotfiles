@@ -22,9 +22,6 @@ function! mywikis#load()
   " Default wiki
   let wiki_1 = {}
   let wiki_1.path = '~/Dropbox/Documents/Wikis/Default'
-  let wiki_1.diary_header = 'Journal'
-  let wiki_1.diary_index = 'journal'
-  let wiki_1.diary_rel_path = 'journal/'
 
   " Public wiki
   let wiki_2 = {}
@@ -45,8 +42,15 @@ function! mywikis#load()
   let wiki_4 = {}
   let wiki_4.path = '~/Dropbox/Documents/Wikis/Labbooks'
 
+  " Journal wiki
+  let wiki_5 = {}
+  let wiki_5.path = '~/Dropbox/Documents/Wikis/Journal'
+  let wiki_5.diary_header = 'Journal'
+  let wiki_5.diary_index = 'index'
+  let wiki_5.diary_rel_path = ''
+
   let g:vimwiki_hl_headers = 1
-  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4]
+  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3, wiki_4, wiki_5]
 
   augroup wiki
     autocmd BufNewFile,BufRead *.wiki map <Leader>wk :s/\%V\(.*\)\%V/\~\~ \1 \~\~/g<CR>:let @/ = ""<CR>
