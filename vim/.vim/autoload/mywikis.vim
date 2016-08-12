@@ -54,6 +54,7 @@ function! mywikis#load()
     "autocmd BufNewFile,BufRead *.wiki :imap hr ----
     autocmd BufNewFile,BufRead *.wiki set foldmethod=manual
     autocmd BufNewFile,BufRead *.wiki set nonu
+    autocmd BufNewFile,BufRead *.wiki set nolist
 
     nmap <Leader>wT <Plug>VimwikiTabnewLink
     nmap <Leader>tt <Plug>VimwikiToggleListItem
