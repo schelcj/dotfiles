@@ -23,11 +23,11 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'vim-scripts/vcscommand.vim'
 Plugin 'vim-perl/vim-perl'
 Plugin 'honza/vim-snippets'
-Plugin 'vim-scripts/vim-pad'
 Plugin 'jceb/vim-orgmode'
 Plugin 'tpope/vim-speeddating'
 Plugin 'perlhelp.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'fmoralesc/vim-pad'
 call vundle#end()
 filetype plugin indent on
 
@@ -205,3 +205,5 @@ call mywikis#load()
 noremap <F3> :noh<CR>
 
 iab <expr> dts strftime("%c")
+
+let g:pad#dir="~/Dropbox/Documents/Notes/"
