@@ -22,3 +22,5 @@ alias trello="xdg-open https://trello.com/"
 
 alias ham="hamster-cli list | xmessage -file -"
 alias mux="tmuxinator"
+
+alias milk="/opt/Remember\ The\ Milk/Remember\ The\ Milk"
