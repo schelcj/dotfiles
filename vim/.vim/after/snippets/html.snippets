@@ -23,3 +23,20 @@ snippet bs_modal
 			</div>
 		</div>
 	</div>
+
+snippet bs_form_group
+	<div class="form-group">
+		<label for="${1:}" class="control-label">${2:}</label>
+		<input tabindex="2" type="text" class="form-control" id="$1" name="$1" />
+	</div>
+
+snippet bs_panel
+	<div class="panel panel-info">
+		<div class="panel-heading">${1:}</div>
+
+		<div class="panel-body">
+		</div>
+
+		<div class="panel-footer">
+		</div>
+	</div>

@@ -24,3 +24,5 @@ equivalent_modules = Modern::Perl
 private_name_regex = _(?!build|trigger_)\w+
 
 [-ControlStructures::ProhibitUnlessBlocks]
+
+[-ControlStructures::ProhibitPostfixControls]
