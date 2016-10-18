@@ -23,8 +23,8 @@ function! mywikis#load()
   let wiki_1 = {}
   let wiki_1.path = '~/Dropbox/Documents/Wikis/Default'
   let wiki_1.diary_header = 'Journal'
-  let wiki_1.diary_index = 'journal'
-  let wiki_1.diary_rel_path = 'journal/'
+  let wiki_1.diary_index = 'index'
+  let wiki_1.diary_rel_path = '../Journal'
 
   " Public wiki
   let wiki_2 = {}
@@ -37,8 +37,15 @@ function! mywikis#load()
   let wiki_2.template_path = '~/Dropbox/Documents/Wikis/templates'
   let wiki_2.template_ext = '.html'
 
+  " Journal wiki
+  let wiki_3 = {}
+  let wiki_3.path = '~/Dropbox/Documents/Wikis/Journal'
+  let wiki_3.diary_header = 'Journal'
+  let wiki_3.diary_index = 'index'
+  let wiki_3.diary_rel_path = ''
+
   let g:vimwiki_hl_headers = 1
-  let g:vimwiki_list = [wiki_1, wiki_2]
+  let g:vimwiki_list = [wiki_1, wiki_2, wiki_3]
 
   augroup wiki
     autocmd BufNewFile,BufRead *.wiki map <Leader>wk :s/\%V\(.*\)\%V/\~\~ \1 \~\~/g<CR>:let @/ = ""<CR>
@@ -52,8 +59,8 @@ function! mywikis#load()
     autocmd BufNewFile,BufRead *.wiki set nonu
     autocmd BufNewFile,BufRead *.wiki set nolist
 
-    nmap <Leader>wT <Plug>VimwikiTabnewLink
-    nmap <Leader>tt <Plug>VimwikiToggleListItem
+    nmap <Leader>wT :VimwikiTabnewLink<CR>
+    nmap <Leader>tt :VimwikiToggleListItem<CR>
     nmap <Leader>wl :lopen<CR>
     nmap <Leader>wL :lclose<CR>
     nmap <Leader>wn :lnext<CR>
