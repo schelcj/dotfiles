@@ -201,13 +201,11 @@ augroup GO
 augroup end
 
 call mywikis#load()
-
-if exists(':myworkwikis')
-  call myworkwikis#load()
-endif
+call myworkwikis#load()
 
 noremap <F3> :noh<CR>
 
 iab <expr> dts strftime("%c")
 
 let g:pad#dir="~/Dropbox/Documents/Notes/"
+let g:pad#rename_files=0
