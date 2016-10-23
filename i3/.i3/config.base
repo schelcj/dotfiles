@@ -143,9 +143,16 @@ bindsym $mod+Control+s layout toggle split
 bindsym $mod+Mod4+l move workspace to output left
 bindsym $mod+Mod4+r move workspace to output right
 bindsym $mod+Control+l exec ~/scripts/lock.sh
-bindsym Mod4+w exec ~/.wallpapers/change
+
+bindsym Mod4+d exec ~/.wallpapers/change
 bindsym Mod4+g exec gvim
 bindsym $mod+grave exec ~/scripts/rofi.sh
+
+bindsym Mod4+w exec ~/scripts/rofi.sh window
+bindsym Mod4+s exec ~/scripts/rofi.sh ssh
+bindsym Mod4+r exec ~/scripts/rofi.sh run
+bindsym Mod4+t exec ~/scripts/rofi.sh Workspaces
+
 bindsym $mod+m exec i3-sensible-terminal -e ~/scripts/mc.sh
 bindsym XF86Launch9 exec ~/scripts/next
 bindsym XF86Launch8 exec ~/scripts/ban
