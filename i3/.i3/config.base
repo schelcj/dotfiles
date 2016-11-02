@@ -137,8 +137,8 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod+minus scratchpad show
 bindsym $mod+plus move scratchpad
-bindsym Control+Mod1+Left workspace prev
-bindsym Control+Mod1+Right workspace next
+bindsym Control+Mod1+Left workspace prev_on_output
+bindsym Control+Mod1+Right workspace next_on_output
 bindsym $mod+Control+s layout toggle split
 bindsym $mod+Mod4+l move workspace to output left
 bindsym $mod+Mod4+r move workspace to output right
