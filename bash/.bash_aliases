@@ -24,3 +24,5 @@ alias ham="hamster-cli list | xmessage -file -"
 alias mux="tmuxinator"
 
 alias milk="/opt/Remember\ The\ Milk/Remember\ The\ Milk"
+
+alias rename_crai="ls -1 *.cram|cut -d\. -f1|xargs -I % mv -v %.crai %.cram.crai"
