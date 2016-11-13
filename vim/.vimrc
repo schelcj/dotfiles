@@ -210,3 +210,4 @@ iab <expr> dts strftime("%c")
 let g:pad#dir="~/Dropbox/Documents/Notes/"
 let g:pad#rename_files=0
 let g:pad#window_height=24
+let g:pad#default_file_extension=".md"
