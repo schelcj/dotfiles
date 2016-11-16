@@ -9,3 +9,5 @@ set guioptions-=R
 set guioptions-=b
 set guioptions-=h
 set guioptions-=m
+
+set guifont=Ubuntu\ Mono\ 14
