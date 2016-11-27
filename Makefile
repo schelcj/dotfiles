@@ -36,6 +36,7 @@ stow-freedman: stow-default
 	stow dunst
 	stow wallpapers
 	stow urxvt
+	stow vimperator
 
 stow-csg: stow-default
 
