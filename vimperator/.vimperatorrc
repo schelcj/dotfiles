@@ -1,5 +1,7 @@
-set gui=navigation,tabs
+set gui=none
 set defsearch=google
+
+colorscheme solarized_dark
 
 autocmd LocationChange .*                          js modes.passAllKeys = false
 autocmd LocationChange www\\.rememberthemilk\\.com js modes.passAllKeys = true
@@ -7,9 +9,6 @@ autocmd LocationChange evernote\\.com              js modes.passAllKeys = true
 autocmd LocationChange trello\\.com                js modes.passAllKeys = true
 
 let mapleader="\"
-nmap <Leader>G :set gui=all<return>
-nmap <Leader>g :set gui=none<return>
-nmap <Leader>gg :set gui=navigation,tabs<return>
-nmap <Ctrl>r :reload
-
-colorscheme solarized_dark
+noremap <Leader>X :set gui=all<return>
+noremap <Leader>x :set gui=none<return>
+noremap <Ctrl>r :reload
