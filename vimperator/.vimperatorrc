@@ -9,6 +9,6 @@ autocmd LocationChange evernote\\.com              js modes.passAllKeys = true
 autocmd LocationChange trello\\.com                js modes.passAllKeys = true
 
 let mapleader="\"
-noremap <Leader>X :set gui=all<return>
+noremap <Leader>X :set gui=navigation,tabs<return>
 noremap <Leader>x :set gui=none<return>
 noremap <Ctrl>r :reload
