@@ -201,7 +201,7 @@ augroup GO
 augroup end
 
 call mywikis#load()
-call myworkwikis#load()
+"call myworkwikis#load()
 
 noremap <F3> :noh<CR>
 

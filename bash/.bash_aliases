@@ -26,3 +26,5 @@ alias mux="tmuxinator"
 alias milk="/opt/Remember\ The\ Milk/Remember\ The\ Milk"
 
 alias rename_crai="ls -1 *.cram|cut -d\. -f1|xargs -I % mv -v %.crai %.cram.crai"
+
+alias squeue_priority='squeue -S -p -t pd -l -o "%9Q %.15i %.9P %.8j %.8u %.8T %.10M %.9l %.6D %R" --sort=-p,i'
