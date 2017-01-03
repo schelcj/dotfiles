@@ -28,6 +28,8 @@ Plugin 'tpope/vim-speeddating'
 Plugin 'perlhelp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'fmoralesc/vim-pad'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 filetype plugin indent on
 
@@ -205,8 +207,13 @@ call mywikis#load()
 
 noremap <F3> :noh<CR>
 
-iab <expr> dts strftime("%c")
+iab <expr> dnow strftime("%c")
+iab <expr> dts strftime("%a %d %b %Y")
 
 let g:pad#dir="~/Dropbox/Documents/Notes/"
 let g:pad#rename_files=0
 let g:pad#window_height=24
+let g:pad#default_file_extension=".md"
+
+set laststatus=2
+let g:airline_theme='solarized'

@@ -162,6 +162,7 @@ bindsym XF86AudioRaiseVolume exec ~/scripts/volup
 bindsym XF86AudioLowerVolume exec ~/scripts/voldown
 bindsym $mod+Control+w exec ~/scripts/weather.sh
 bindsym Print exec scrot -e 'mv $f ~/Dropbox/Photos/Screenshots'
+bindsym $mod+Shift+f fullscreen toggle global
 
 workspace_auto_back_and_forth yes
 
@@ -171,6 +172,7 @@ for_window [class="^Pidgin"] floating toggle
 for_window [class="^Skype"] floating toggle
 for_window [class="^xpad"] floating toggle
 for_window [class="^Xmessage"] floating toggle
+for_window [class="^Gvim"] floating toggle
 
 assign [class="^Google-chrome"] 1 :www
 
