@@ -23,5 +23,5 @@ root: ~/
 
 windows:
   - logs:
-    - ssh syslog
-    - colortail -f /var/log/all.log
+    - ssh syslog.bio.sph.umich.edu
+    - clear ; colortail -f /var/log/all.log
