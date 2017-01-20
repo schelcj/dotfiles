@@ -30,6 +30,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'fmoralesc/vim-pad'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'majutsushi/tagbar'
 call vundle#end()
 filetype plugin indent on
 
@@ -67,7 +68,7 @@ autocmd FileType actionscript set syntax=actionscript
 filetype indent on
 filetype plugin on
 
-map <C-t> :TlistToggle<CR>
+map <C-t> :Tagbar<CR>
 
 "let Tlist_Use_Horiz_Window=1
 "let perl_include_pod=1
@@ -205,7 +206,6 @@ augroup GO
 augroup end
 
 call mywikis#load()
-"call myworkwikis#load()
 
 noremap <F3> :noh<CR>
 

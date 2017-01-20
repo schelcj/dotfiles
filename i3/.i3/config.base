@@ -154,14 +154,18 @@ bindsym Mod4+r exec ~/scripts/rofi.sh run
 bindsym Mod4+t exec ~/scripts/rofi.sh Workspaces
 
 bindsym $mod+m exec i3-sensible-terminal -e ~/scripts/mc.sh
+bindsym $mod+n exec xpad -n
+
 bindsym XF86Launch9 exec ~/scripts/next
 bindsym XF86Launch8 exec ~/scripts/ban
 bindsym XF86Launch7 exec ~/scripts/fav
 bindsym XF86Launch5 exec ~/scripts/prev
 bindsym XF86AudioRaiseVolume exec ~/scripts/volup
 bindsym XF86AudioLowerVolume exec ~/scripts/voldown
+
 bindsym $mod+Control+w exec ~/scripts/weather.sh
 bindsym Print exec scrot -e 'mv $f ~/Dropbox/Photos/Screenshots'
+bindsym $mod+Shift+f fullscreen toggle global
 
 workspace_auto_back_and_forth yes
 
