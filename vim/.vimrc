@@ -85,6 +85,8 @@ map <C-K> <C-W>k<C-W>_
 "
 " " quickly tidy our current buffer of perl code
 au Filetype perl nmap <leader>T :%!perltidy<CR>
+au Filetype perl vmap <leader>T :!perltidy<CR>
+
 
 au BufRead,BufNewFile *.t set ft=perl
 au BufRead,BufNewFile *.ep set ft=html
@@ -203,7 +205,7 @@ augroup GO
 augroup end
 
 call mywikis#load()
-call myworkwikis#load()
+"call myworkwikis#load()
 
 noremap <F3> :noh<CR>
 

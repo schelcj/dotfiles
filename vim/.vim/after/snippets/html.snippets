@@ -1,3 +1,5 @@
+version 1
+
 snippet md_form
 	<div class="form-group">
 		<label for="${1:}">${2}</label>
@@ -26,12 +28,12 @@ snippet bs_modal
 
 snippet bs_form_group
 	<div class="form-group">
-		<label for="${1:}" class="control-label">${2:}</label>
-		<input tabindex="2" type="text" class="form-control" id="$1" name="$1" />
+		<label for="$1" class="control-label">$2</label>
+		<input type="text" class="form-control" name="${1}" />
 	</div>
 
 snippet bs_panel
-	<div class="panel panel-info">
+	<div class="panel panel-default">
 		<div class="panel-heading">${1:}</div>
 
 		<div class="panel-body">
@@ -40,3 +42,9 @@ snippet bs_panel
 		<div class="panel-footer">
 		</div>
 	</div>
+
+snippet bs_bread_crumb
+	<ol class="breadcrumb">
+		<li><%= link_to 'root' => begin %>Home<% end %></li>
+		<li class="active">$1</li>
+	</ol>
