@@ -154,7 +154,7 @@ bindsym Mod4+r exec ~/scripts/rofi.sh run
 bindsym Mod4+t exec ~/scripts/rofi.sh Workspaces
 
 bindsym $mod+m exec i3-sensible-terminal -e ~/scripts/mc.sh
-bindsym $mod+n exec xpad -n
+bindsym Mod4+n exec xpad -n
 
 bindsym XF86Launch9 exec ~/scripts/next
 bindsym XF86Launch8 exec ~/scripts/ban
