@@ -217,5 +217,9 @@ let g:pad#rename_files=0
 let g:pad#window_height=24
 let g:pad#default_file_extension=".md"
 
+augroup MD
+  au! BufRead,BufNewFile *.md set foldmethod=manual
+augroup end
+
 set laststatus=2
 let g:airline_theme='solarized'
