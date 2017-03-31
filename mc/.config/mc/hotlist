@@ -16,6 +16,7 @@ GROUP "4077th"
   ENTRY "Unfiled Pictures" URL "/cifs/Media/Pictures/unfiled"
 ENDGROUP
 GROUP "Umich"
+  ENTRY "schelcj@ressik" URL "/sh://schelcj@ressik.sph.umich.edu/home/schelcj"
   ENTRY "/afs/umich.edu/user/s/c/schelcj" URL "/afs/umich.edu/user/s/c/schelcj"
   ENTRY "schelcj@dumbo" URL "/sh://schelcj@dumbo/net/dumbo/home/schelcj"
   ENTRY "/afs/umich.edu/group/s/sph/csg/adm/adminondumbo" URL "/afs/umich.edu/group/s/sph/csg/adm/adminondumbo"
