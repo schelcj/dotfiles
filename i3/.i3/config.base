@@ -188,4 +188,10 @@ bindsym XF86AudioMute exec ~/scripte/mute
 bindsym XF86AudioPlay exec ~/scripts/pause
 bindsym XF86Calculator exec gnome-calculator
 
+for_window [class="^Slack"] mark --add slack
+for_window [class="^Spotify"] mark --add spotify
+
+bindsym $mod+1 [con_mark="slack"] focus
+bindsym $mod+2 [con_mark="spotify"] focus
+
 # Host specific settings
