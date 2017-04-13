@@ -40,8 +40,9 @@ header_display_format 0 "%F% %t %45s  [%12r] %D"
 % headers i want to see
 visible_headers "Date:,X-newsreader:,NNTP-,From:,Newsgroups:,Subject:,Approved:"
 
-set metamail_command "metamail"
-set use_metamail 1
+% set use_mime 1
+% set use_metamail 1
+% set metamail_command "metamail"
 
 % my color scheme changes
 color normal default default

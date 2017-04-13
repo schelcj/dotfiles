@@ -22,6 +22,8 @@ lists umichcollab www-sig
 lists t2d-portal-dev
 lists topmed-alignment
 lists genesforgood-team
+lists high-BW-researchers
+lists hpc-support
 
 subscribe sph.staff sph.biostat.support sph.bio.staff sph.bio.admin sph-biostat-cluster-announce sph-biostat-admin sph.tech
 subscribe cluster-admins unix-admin unix-admins unix.admins
@@ -31,18 +33,13 @@ subscribe umichcollab www-sig
 subscribe t2d-portal-dev
 subscribe topmed-alignment
 subscribe genesforgood-team
+subscribe high-BW-researchers
+subscribe hpc-support
 
 mailboxes ~/Mail/Umich/INBOX
 mailboxes ~/Mail/Umich/biostat
 mailboxes ~/Mail/Umich/biostat.cluster
 mailboxes ~/Mail/Umich/biostat.cluster.nagios
-mailboxes ~/Mail/Umich/csg
-mailboxes ~/Mail/Umich/csg.gecco
-mailboxes ~/Mail/Umich/csg.inpsyght
-mailboxes ~/Mail/Umich/csg.topmed
-mailboxes ~/Mail/Umich/csg.topmed.alignment
-mailboxes ~/Mail/Umich/flux
-mailboxes ~/Mail/Umich/flux.support
 mailboxes ~/Mail/Umich/Misc
 mailboxes ~/Mail/Umich/sph
 mailboxes ~/Mail/Umich/umich

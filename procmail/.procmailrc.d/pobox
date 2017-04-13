@@ -1,11 +1,19 @@
 DEFAULT   = $HOME/Maildir/
 ARCHIVE   = $HOME/Mail/Archive/Pobox
 LOGFILE   = $HOME/.procmail-pobox.log
+ATTACH    = $HOME/attach
 DROPPRIVS = YES
 
 YEAR=`date +%Y`
 MONTH=`date +%m`
 DUMMY=`test -d $ARCHIVE/$YEAR || mkdir -p -m 0700 $ARCHIVE/$YEAR`
+
+#:0c
+#*^Content-Type:
+#{
+#  :0fw
+#  | munpack -q -C $ATTACH
+#}
 
 :0
 $ARCHIVE/$YEAR/$MONTH/
