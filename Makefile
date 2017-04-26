@@ -1,5 +1,9 @@
 install: mod-init mod-update
 
+install-vundle:
+	git  clone https://github.com/VundleVim/Vundle.vim.git $(HOME)/.vim/bundle/Vundle.vim
+	vim -c ':VundleInstall'
+
 mod-init:
 	@git submodule init
 
