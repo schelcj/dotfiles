@@ -23,7 +23,7 @@ alias trello="xdg-open https://trello.com/"
 alias ham="hamster-cli list | xmessage -file -"
 alias mux="tmuxinator"
 
-alias milk="/opt/Remember\ The\ Milk/Remember\ The\ Milk"
+alias milk="rememberthemilk --enable-transparenvisuals --force-enable-global-smart-add"
 
 alias rename_crai="ls -1 *.cram|cut -d\. -f1|xargs -I % mv -v %.crai %.cram.crai"
 

@@ -1,0 +1,20 @@
+[Desktop Entry]
+Name=Midnight Commander
+Name[af]=Middernag Kommandeur
+Name[eo]=Meznokta komandanto
+Name[fa]=فرمان‌دار نیمه شب
+Name[ko]=미드나잇 커멘더
+Name[lv]=Pusnakts Komandieris
+Name[nso]=Molaedi wa Bosegogare
+Name[th]=มิดไนท์คอมมานเดอร์
+Name[ve]=Muhulwane wa vhukati ha vhusiku
+Name[xh]=Umyaleli Waphakathi kobusuku
+Name[zu]=Umyaleli waphakathi nobusuku
+Comment=File manager
+Comment[pl]=Menedżer plików
+Exec=i3-sensible-terminal -e /home/schelcj/scripts/mc.sh
+Icon=MidnightCommander
+Terminal=false
+Type=Application
+Categories=ConsoleOnly;Utility;FileManager;System;FileTools;
+Keywords=file manager;console;
