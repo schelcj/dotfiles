@@ -14,3 +14,4 @@
   default = matching
 [core]
   excludesfile = /home/schelcj/.gitignore_global
+	editor = vim
