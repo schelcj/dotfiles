@@ -107,11 +107,3 @@ function undrain() {
     scontrol update nodename=$i state=resume
   done
 }
-
-function ssh() {
-  tmp_fifo=$(mktemp -u --suffix=_ssh_fifo)
-  mkfifo "$tmp_fifo"
-  cat ~/.ssh/config ~/.ssh/config.d/*.conf >"$tmp_fifo" 2>/dev/null &
-  /usr/bin/ssh -F "$tmp_fifo" "$@"
-  rm "$tmp_fifo"
-}
