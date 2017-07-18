@@ -33,6 +33,8 @@ root: ~/
 windows:
   - backuppc:
     - ssh backuppc
+  - betazed:
+    - ssh betazed
   - cobbler:
     - ssh cobbler
   - dhcp:
