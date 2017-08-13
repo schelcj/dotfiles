@@ -39,8 +39,6 @@ windows:
     - ssh denobula
   - risa:
     - ssh risa
-  - betazed:
-    - ssh betazed
 # - cn001:
 #   - ssh cn001
 # - cn002:
