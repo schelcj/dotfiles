@@ -15,6 +15,9 @@ GROUP "4077th"
   ENTRY "Unfiled Home Movies" URL "/cifs/Media/Home Movies/unfiled"
   ENTRY "Unfiled Pictures" URL "/cifs/Media/Pictures/unfiled"
 ENDGROUP
+GROUP "Merit"
+ENTRY "schelcj@msc-login01" URL "/sh://schelcj@msc-login01.merit.edu/home/MERIT/schelcj"
+ENDGROUP
 GROUP "Umich"
   ENTRY "schelcj@ressik" URL "/sh://schelcj@ressik.sph.umich.edu/home/schelcj"
   ENTRY "/afs/umich.edu/user/s/c/schelcj" URL "/afs/umich.edu/user/s/c/schelcj"
@@ -39,3 +42,4 @@ GROUP "FTP Sites"
 ENDGROUP
 ENTRY "Trash" URL "/home/schelcj/.local/share/Trash/files"
 ENTRY "dotfiles" URL "/home/schelcj/.dotfiles"
+

@@ -193,10 +193,11 @@ bindsym XF86Calculator exec gnome-calculator
 
 for_window [class="^Slack"] mark --add slack
 for_window [class="^Spotify"] mark --add spotify
+for_window [class="^HipChat"] mark --add hipchat
 
 bindsym Mod4+1 [con_mark="comm"] focus
 bindsym Mod4+2 [con_mark="slack"] focus
 bindsym Mod4+3 [con_mark="spotify"] focus
-bindsym Mod4+4 [con_mark="pad"] focus
+bindsym Mod4+4 [con_mark="hipchat"] focus
 
 # Host specific settings
