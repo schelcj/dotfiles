@@ -4,6 +4,10 @@ if [ -d ${HOME}/perl5/perlbrew ]; then
   source ${HOME}/perl5/perlbrew/etc/bashrc
 fi
 
+if [ -d ${HOME}/opt/local/pinto ]; then
+  source ${HOME}/opt/local/pinto/etc/bashrc
+fi
+
 export PERLCRITIC="${HOME}/.perlcriticrc"
 export PERLTIDY="${HOME}/.perltidyrc"
 export PATH=${HOME}/perl5/bin:${PATH}

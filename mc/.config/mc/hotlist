@@ -16,7 +16,8 @@ GROUP "4077th"
   ENTRY "Unfiled Pictures" URL "/cifs/Media/Pictures/unfiled"
 ENDGROUP
 GROUP "Merit"
-ENTRY "schelcj@msc-login01" URL "/sh://schelcj@msc-login01.merit.edu/home/MERIT/schelcj"
+  ENTRY "/sftp://meritmain-live-mitosis_schelcj@meritmain.sftp.wpengine.com:2222/" URL "/sftp://meritmain-live-mitosis_schelcj@meritmain.sftp.wpengine.com:2222/"
+  ENTRY "schelcj@msc-login01" URL "/sh://schelcj@msc-login01.merit.edu/home/MERIT/schelcj"
 ENDGROUP
 GROUP "Umich"
   ENTRY "schelcj@ressik" URL "/sh://schelcj@ressik.sph.umich.edu/home/schelcj"
@@ -42,4 +43,3 @@ GROUP "FTP Sites"
 ENDGROUP
 ENTRY "Trash" URL "/home/schelcj/.local/share/Trash/files"
 ENTRY "dotfiles" URL "/home/schelcj/.dotfiles"
-
