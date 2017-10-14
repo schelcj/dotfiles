@@ -187,7 +187,7 @@ exec ~/.i3/autostart
 
 $i3-theme-window
 
-bindsym XF86AudioMute exec ~/scripte/mute
+bindsym XF86AudioMute exec ~/scripts/mute
 bindsym XF86AudioPlay exec ~/scripts/pause
 bindsym XF86Calculator exec gnome-calculator
 
