@@ -143,6 +143,7 @@ bindsym $mod+Control+s layout toggle split
 bindsym $mod+Mod4+l move workspace to output left
 bindsym $mod+Mod4+r move workspace to output right
 bindsym $mod+Control+l exec ~/scripts/lock.sh
+bindsym $mod+Shift+f fullscreen toggle global
 
 bindsym Mod4+d exec ~/.wallpapers/change
 bindsym Mod4+g exec gvim
@@ -160,12 +161,16 @@ bindsym XF86Launch9 exec ~/scripts/next
 bindsym XF86Launch8 exec ~/scripts/ban
 bindsym XF86Launch7 exec ~/scripts/fav
 bindsym XF86Launch5 exec ~/scripts/prev
-bindsym XF86AudioRaiseVolume exec ~/scripts/volup
-bindsym XF86AudioLowerVolume exec ~/scripts/voldown
+
+bindsym XF86AudioPlay exec ~/scripts/pause
+bindsym XF86Calculator exec gnome-calculator
+
+bindsym XF86AudioRaiseVolume exec ~/scripts/volctl up
+bindsym XF86AudioLowerVolume exec ~/scripts/volctl down
+bindsym XF86AudioMute exec ~/scripts/volctl mute
 
 bindsym $mod+Control+w exec ~/scripts/weather.sh
 bindsym Print exec scrot -e 'mv $f ~/Dropbox/Media/Photos/Screenshots'
-bindsym $mod+Shift+f fullscreen toggle global
 
 workspace_auto_back_and_forth yes
 
@@ -186,10 +191,6 @@ assign [class="^Slack"] 2 :comm
 exec ~/.i3/autostart
 
 $i3-theme-window
-
-bindsym XF86AudioMute exec ~/scripts/mute
-bindsym XF86AudioPlay exec ~/scripts/pause
-bindsym XF86Calculator exec gnome-calculator
 
 #for_window [class="^Slack"] mark --add slack
 #for_window [class="^Spotify"] mark --add spotify
