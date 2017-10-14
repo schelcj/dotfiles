@@ -14,7 +14,8 @@ xscreensaver -no-splash &
 xpad -N -h &
 hamster-indicator &
 indicator-sound-switcher &
-pnmixer &
+#pnmixer &
+pasystray &
 
 #/opt/extras.ubuntu.com/my-weather-indicator/bin/my-weather-indicator &
 google-drive-ocamlfuse -label umich ~/Drive/Umich/
