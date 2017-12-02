@@ -26,6 +26,7 @@ Plugin 'tpope/vim-speeddating'
 Plugin 'perlhelp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'dhruvasagar/vim-table-mode'
 if v:version > 703
   Plugin 'garbas/vim-snipmate'
   Plugin 'scrooloose/nerdtree'
