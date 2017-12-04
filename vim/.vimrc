@@ -223,3 +223,7 @@ augroup end
 
 set laststatus=2
 let g:airline_theme='solarized'
+
+augroup EPL
+  au! BufRead,BufNewFile *.epl set filetype=perl
+augroup end
