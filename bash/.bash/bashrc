@@ -4,9 +4,10 @@ source ${HOME}/.bash/functions.sh
 source ${HOME}/.bash/rtm.sh
 source ${HOME}/.bash/perl.sh
 source ${HOME}/.bash/go.sh
-source ${HOME}/.bash/geeknote.sh
+#source ${HOME}/.bash/geeknote.sh
 source ${HOME}/.bash/dropbox.sh
-source ${HOME}/.bash/umich.sh
+source ${HOME}/.bash/merit.sh
+#source ${HOME}/.bash/umich.sh
 #source ${HOME}/.bash/task.sh
 
 # case "$(hostname)" in
