@@ -34,3 +34,7 @@ alias rename_crai="ls -1 *.cram|cut -d\. -f1|xargs -I % mv -v %.crai %.cram.crai
 alias squeue_priority='squeue -S -p -t pd -l -o "%9Q %.15i %.9P %.8j %.8u %.8T %.10M %.9l %.6D %R" --sort=-p,i'
 
 alias control-panel="unset XDG_CURRENT_DESKTOP ; unity-control-center"
+
+alias sqlitestudio="/home/schelcj/Downloads/SQLiteStudio/sqlitestudio"
+
+alias smux="~/scripts/smux.pl"
