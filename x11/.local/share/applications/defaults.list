@@ -1,3 +1,4 @@
 [Default Applications]
 x-directory/normal=Thunar.desktop
 inode/directory=Thunar.desktop
+text/plain=gedit.desktop;komodo-ide-11.desktop
