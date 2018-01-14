@@ -27,6 +27,7 @@ Plugin 'perlhelp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'mileszs/ack.vim'
 if v:version > 703
   Plugin 'garbas/vim-snipmate'
   Plugin 'scrooloose/nerdtree'
@@ -112,7 +113,7 @@ let g:solarized_termtrans=1
 let g:solarized_contrast="high"
 colorscheme solarized
 
-let g:ackprg="/home/schelcj/perl5/bin/ack"
+" let g:ackprg="/home/schelcj/perl5/bin/ack"
 
 let g:GPGDefaultRecipients=["D6776630"]
 
