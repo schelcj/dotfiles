@@ -12,3 +12,4 @@
 --break-before-all-operators
 --want-break-after='='
 --keep-old-blank-lines=2
+--maximum-consecutive-blank-lines=0
