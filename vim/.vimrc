@@ -234,3 +234,5 @@ let g:airline_theme='solarized'
 augroup EPL
   au! BufRead,BufNewFile *.epl set filetype=perl
 augroup end
+
+autocmd BufWritePre * %s/\s\+$//e
