@@ -37,3 +37,10 @@ snippet appcmd
 	=head1
 
 	$1::Command::$2 - ${3:description}
+
+snippet mojo-cont
+	package ${1:app}::Controller::${2:controller}
+	
+	use Mojo::Base 'Mojolicious::Controller';
+	
+	1;
