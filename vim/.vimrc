@@ -28,6 +28,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'mileszs/ack.vim'
+Plugin 'chrisbra/NrrwRgn'
 if v:version > 703
   Plugin 'garbas/vim-snipmate'
   Plugin 'scrooloose/nerdtree'
@@ -234,3 +235,5 @@ let g:airline_theme='solarized'
 augroup EPL
   au! BufRead,BufNewFile *.epl set filetype=perl
 augroup end
+
+autocmd BufWritePre * %s/\s\+$//e
