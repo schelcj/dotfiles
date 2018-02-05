@@ -113,7 +113,7 @@ let g:solarized_termtrans=1
 let g:solarized_contrast="high"
 colorscheme solarized
 
-let g:ackprg='/home/' . $USER . '/perl5/bin/ack'
+let g:ackprg=$HOME . '/perl5/bin/ack'
 
 let g:GPGDefaultRecipients=["D6776630"]
 
