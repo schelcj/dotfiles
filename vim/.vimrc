@@ -237,3 +237,6 @@ augroup EPL
 augroup end
 
 autocmd BufWritePre * %s/\s\+$//e
+
+let g:nrrw_rgn_resize_window = 'relative'
+let g:nrrw_rgn_rel_min = 100
