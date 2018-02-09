@@ -7,7 +7,7 @@ alias win7="virt-viewer win7"
 alias wireframe="env LIBOVERLAY_SCROLLBAR=0 UBUNTU_MENUPROXY=0 /opt/WireframeSketcher/WireframeSketcher"
 #alias firefox="~/Dropbox/Downloads/firefox/firefox"
 alias rstudio="/usr/lib/rstudio/bin/rstudio"
-alias staruml="/opt/staruml/staruml"
+#alias staruml="/opt/staruml/staruml"
 
 alias drive-pobox="xdg-open https://drive.google.com/?authuser=0"
 alias calendar-pobox="xdg-open https://www.google.com/calendar?authuser=0"

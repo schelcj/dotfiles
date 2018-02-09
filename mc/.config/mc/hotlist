@@ -16,9 +16,10 @@ GROUP "4077th"
   ENTRY "Unfiled Pictures" URL "/cifs/Media/Pictures/unfiled"
 ENDGROUP
 GROUP "Merit"
+  ENTRY "/sh://schelcj@sfpop-prod01/home/MERIT/schelcj" URL "/sh://schelcj@sfpop-prod01/home/MERIT/schelcj"
+  ENTRY "schelcj@merit-dev-schelcj" URL "/sh://schelcj@merit-dev-schelcj/home/MERIT/schelcj"
   ENTRY "/sh://schelcj@msc-login01.merit.edu/merit/group/userserv/share/Teams/SoftwareDevelopment" URL "/sh://schelcj@msc-login01.merit.edu/merit/group/userserv/share/Teams/SoftwareDevelopment"
   ENTRY "/sftp://meritmain-live-mitosis_schelcj@meritmain.sftp.wpengine.com:2222/" URL "/sftp://meritmain-live-mitosis_schelcj@meritmain.sftp.wpengine.com:2222/"
-  ENTRY "schelcj@msc-login01" URL "/sh://schelcj@msc-login01.merit.edu/home/MERIT/schelcj"
 ENDGROUP
 GROUP "Umich"
   ENTRY "schelcj@ressik" URL "/sh://schelcj@ressik.sph.umich.edu/home/schelcj"
