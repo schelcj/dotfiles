@@ -29,6 +29,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'mileszs/ack.vim'
 Plugin 'chrisbra/NrrwRgn'
+Plugin 'Carpetsmoker/xdg_open.vim'
 if v:version > 703
   Plugin 'garbas/vim-snipmate'
   Plugin 'scrooloose/nerdtree'
