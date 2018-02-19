@@ -179,10 +179,7 @@ for_window [class="^gnome-calculator"] floating toggle
 for_window [class="^Skype"] floating toggle
 for_window [class="^xpad"] floating toggle
 for_window [class="^Xmessage"] floating toggle
-# for_window [class="^Gvim"] floating toggle
-#
-#for_window [class="^Remember The Milk"] floating toggle
-#for_window [class="^Remember The Milk"] border none
+for_window [class="^Hamster-indicator"] floating toggle
 
 assign [class="^Google-chrome"] 1 :www
 #assign [class="^Slack"] 2 :comm
@@ -197,7 +194,7 @@ for_window [class="^Spotify"] mark --add spotify
 for_window [class="^HipChat"] mark --add hipchat
 #
 bindsym Mod4+1 [con_mark="comm"] focus
-#bindsym Mod4+2 [con_mark="slack"] focus
+bindsym Mod4+2 [con_mark="slack"] focus
 bindsym Mod4+3 [con_mark="spotify"] focus
 bindsym Mod4+4 [con_mark="hipchat"] focus
 
