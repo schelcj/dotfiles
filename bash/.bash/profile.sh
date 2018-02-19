@@ -7,7 +7,7 @@ export EDITOR=$(which vim)
 export PDSH_RCMD_TYPE="ssh"
 export PATH=${HOME}/scripts:${HOME}/bin:${PATH}
 
-hash ack-grep 2>/dev/null
-if [ $? -eq 0 ]; then
-  alias ack=$(which ack-grep)
-fi
+# hash ack-grep 2>/dev/null
+# if [ $? -eq 0 ]; then
+#   alias ack=$(which ack-grep)
+# fi

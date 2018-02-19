@@ -8,8 +8,8 @@ if [ -d ${HOME}/opt/local/pinto ]; then
   source ${HOME}/opt/local/pinto/etc/bashrc
 fi
 
-export PERLCRITIC="${HOME}/.perlcriticrc"
-export PERLTIDY="${HOME}/.perltidyrc"
+# export PERLCRITIC="${HOME}/.perlcriticrc"
+# export PERLTIDY="${HOME}/.perltidyrc"
 export PATH=${HOME}/perl5/bin:${PATH}
 
 # alias local_lib_here="eval $(perl -Mlocal::lib=./)"
