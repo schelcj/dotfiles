@@ -1,5 +1,5 @@
 HOSTNAME=${shell hostname}
-THEME?=dwm
+THEME?=default
 
 install:
 	@cp i3status/$(HOSTNAME).conf $(HOME)/.i3status.conf

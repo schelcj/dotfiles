@@ -29,6 +29,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'mileszs/ack.vim'
 Plugin 'chrisbra/NrrwRgn'
+Plugin 'Carpetsmoker/xdg_open.vim'
 if v:version > 703
   Plugin 'airblade/vim-gitgutter'
   Plugin 'garbas/vim-snipmate'
@@ -133,6 +134,7 @@ set list
 " need to turn off the list chars for vimoutliner, lots of hard tabs in there
 augroup VO
   au! BufRead,BufNewFile *.otl set nolist
+  au! BufRead,BufNewFile *.md set nolist
 augroup end
 
 " Ovid's variable highlighting function
@@ -241,3 +243,16 @@ augroup end
 
 let g:nrrw_rgn_resize_window = 'relative'
 let g:nrrw_rgn_rel_min = 100
+
+" https://coderwall.com/p/if9mda/automatically-set-paste-mode-in-vim-when-pasting-in-insert-mode
+"
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
