@@ -10,7 +10,7 @@ fi
 
 # export PERLCRITIC="${HOME}/.perlcriticrc"
 # export PERLTIDY="${HOME}/.perltidyrc"
-export PATH=${HOME}/perl5/bin:${PATH}
+# export PATH=${HOME}/perl5/bin:${PATH}
 
 # alias local_lib_here="eval $(perl -Mlocal::lib=./)"
 # alias perldoc="perlfind"

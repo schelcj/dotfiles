@@ -30,6 +30,7 @@ Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'mileszs/ack.vim'
 Plugin 'chrisbra/NrrwRgn'
 if v:version > 703
+  Plugin 'airblade/vim-gitgutter'
   Plugin 'garbas/vim-snipmate'
   Plugin 'scrooloose/nerdtree'
   Plugin 'fmoralesc/vim-pad'
@@ -121,7 +122,7 @@ let g:GPGDefaultRecipients=["D6776630"]
 " ctrlp options
 set wildignore+=*/tmp/*,*/Drive/*,*.so,*.swp,*.zip,*/bower_components/*,*/node_modules/*,*/local/*
 let g:ctrlp_custom_ignore={
-  \'dir': '\v[\/]\.(git|hg|svn)$',
+  \'dir': '\v[\/]\.(git|hg|svn)|/build$',
   \}
 
 " Conway tips/tricks
@@ -236,7 +237,7 @@ augroup EPL
   au! BufRead,BufNewFile *.epl set filetype=perl
 augroup end
 
-autocmd BufWritePre * %s/\s\+$//e
+" autocmd BufWritePre * %s/\s\+$//e
 
 let g:nrrw_rgn_resize_window = 'relative'
 let g:nrrw_rgn_rel_min = 100
