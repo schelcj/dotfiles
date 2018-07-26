@@ -4,6 +4,7 @@ source ${HOME}/.bash/functions.sh
 source ${HOME}/.bash/rtm.sh
 source ${HOME}/.bash/perl.sh
 source ${HOME}/.bash/go.sh
+source ${HOME}/.bash/google.sh
 #source ${HOME}/.bash/geeknote.sh
 source ${HOME}/.bash/dropbox.sh
 source ${HOME}/.bash/merit.sh
