@@ -16,6 +16,7 @@ GROUP "4077th"
   ENTRY "Unfiled Pictures" URL "/cifs/Media/Pictures/unfiled"
 ENDGROUP
 GROUP "Merit"
+  ENTRY "/sh://schelcj@merit-dev-schelcj/merit/group/userserv/share/Teams/SoftwareDevelopment" URL "/sh://schelcj@merit-dev-schelcj/merit/group/userserv/share/Teams/SoftwareDevelopment"
   ENTRY "/sh://schelcj@sfpop-prod01/home/MERIT/schelcj" URL "/sh://schelcj@sfpop-prod01/home/MERIT/schelcj"
   ENTRY "schelcj@merit-dev-schelcj" URL "/sh://schelcj@merit-dev-schelcj/home/MERIT/schelcj"
   ENTRY "/sh://schelcj@msc-login01.merit.edu/merit/group/userserv/share/Teams/SoftwareDevelopment" URL "/sh://schelcj@msc-login01.merit.edu/merit/group/userserv/share/Teams/SoftwareDevelopment"
@@ -35,6 +36,7 @@ GROUP "Umich"
   ENTRY "schelcj@katan" URL "/sh://schelcj@katan/home/schelcj"
 ENDGROUP
 GROUP "Concert"
+  ENTRY "/sh://cscheller@avesso/home/cscheller" URL "/sh://cscheller@avesso/home/cscheller"
   ENTRY "Client Directory" URL "/home/schelcj/Clients/concert"
   ENTRY "cscheller@alba" URL "/sh://cscheller@alba/home/CONCERTPHARMA/cscheller"
 ENDGROUP
