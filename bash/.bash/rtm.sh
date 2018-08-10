@@ -1,5 +1,5 @@
-alias planner="rtm planner today status:incomplete"
-alias today="rtm ls list:Today"
+alias planner="rtm planner"
+alias today="rtm ls due:Today"
 alias todo="rtm ls list:Todo"
-alias overdue="rtm ls duebefore:today status:incomplete"
+alias overdue="rtm ls due:beforetoday"
 alias inbox="rtm ls list:inbox"

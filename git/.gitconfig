@@ -8,10 +8,22 @@
   co = checkout
   br = branch
   up = pull
+
+  # these are from https://dev.to/devcamilla/why-git-alias-575h
+  st = status
+  chb = checkout -b
+  # current branch
+  me = !git rev-parse --abbrev-ref HEAD
+  # publish
+  pub = !git push origin -u $(git me)
+  # unpublish
+  down = !git push origin --delete $(git me)
+  # list aliases
+  la = !git config -l | grep alias
 [color]
   diff = auto
 [push]
   default = matching
 [core]
   excludesfile = /home/schelcj/.gitignore_global
-	editor = vim
+  editor = vim
