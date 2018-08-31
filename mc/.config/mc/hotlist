@@ -16,6 +16,7 @@ GROUP "4077th"
   ENTRY "Unfiled Pictures" URL "/cifs/Media/Pictures/unfiled"
 ENDGROUP
 GROUP "Merit"
+  ENTRY "schelcj@merit-dev-schelcj" URL "/sh://schelcj@merit-dev-schelcj/"
   ENTRY "/sh://schelcj@merit-dev-schelcj/merit/group/userserv/share/Teams/SoftwareDevelopment" URL "/sh://schelcj@merit-dev-schelcj/merit/group/userserv/share/Teams/SoftwareDevelopment"
   ENTRY "/sh://schelcj@sfpop-prod01/home/MERIT/schelcj" URL "/sh://schelcj@sfpop-prod01/home/MERIT/schelcj"
   ENTRY "schelcj@merit-dev-schelcj" URL "/sh://schelcj@merit-dev-schelcj/home/MERIT/schelcj"
