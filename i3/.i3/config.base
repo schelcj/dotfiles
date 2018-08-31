@@ -181,9 +181,10 @@ for_window [class="^xpad"] floating toggle
 for_window [class="^Xmessage"] floating toggle
 for_window [class="^Hamster-indicator"] floating toggle
 
-assign [class="^Google-chrome"] 1 :www
-# assign [class="^Slack"] 2 :comm
-# assign [class="^HipChat"] 2 :comm
+assign [class="^Google-chrome"] 1
+assign [class="^Slack"] 7
+assign [class="^HipChat"] 6
+assign [class="^Spotify"] 8
 
 exec ~/.i3/autostart
 
