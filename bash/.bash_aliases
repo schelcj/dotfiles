@@ -27,6 +27,7 @@ alias gmail-merit="xdg-open http://mail.google.com/?authuser=2"
 alias trello="xdg-open https://trello.com/"
 
 alias ham="hamster-cli list | xmessage -file -"
+alias h="hamster-cli"
 
 alias milk="rememberthemilk --enable-transparenvisuals --force-enable-global-smart-add"
 

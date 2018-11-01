@@ -179,7 +179,9 @@ for_window [class="^gnome-calculator"] floating toggle
 for_window [class="^Skype"] floating toggle
 for_window [class="^xpad"] floating toggle
 for_window [class="^Xmessage"] floating toggle
-for_window [class="^Hamster-indicator"] floating toggle
+for_window [class="^hamster-indicator"] floating toggle
+for_window [class="^Clockify"] floating toggle
+for_window [class="^Gvim"] floating toggle
 
 assign [class="^Google-chrome"] 1
 assign [class="^Slack"] 7
@@ -193,11 +195,13 @@ $i3-theme-window
 for_window [class="^Slack"] mark --add slack
 for_window [class="^Spotify"] mark --add spotify
 for_window [class="^HipChat"] mark --add hipchat
+for_window [class="^Clockify"] mark --add clockify
 
 bindsym Mod4+1 [con_mark="comm"] focus
 bindsym Mod4+2 [con_mark="spotify"] focus
 bindsym Mod4+3 [con_mark="slack"] focus
 bindsym Mod4+4 [con_mark="hipchat"] focus
+bindsym Mod4+5 [con_mark="clockify"] focus
 
 bindsym $mod+Shift+exclam move workspace 1
 bindsym $mod+Shift+at move workspace 2
