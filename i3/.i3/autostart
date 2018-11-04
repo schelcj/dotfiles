@@ -5,7 +5,7 @@ blueman-adapters &
 /usr/bin/dunst &
 unity-settings-daemon &
 nm-applet &
-~/scripts/start_dropbox.sh
+#~/scripts/start_dropbox.sh
 ssh-add
 clipit &
 redshift-gtk &
