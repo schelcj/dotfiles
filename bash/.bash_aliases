@@ -8,7 +8,7 @@ alias vpn_off="nmcli c down id 'Biostat'"
 alias vpn_on="nmcli c up id 'Biostat'"
 
 alias wireframe="env LIBOVERLAY_SCROLLBAR=0 UBUNTU_MENUPROXY=0 /opt/WireframeSketcher/WireframeSketcher"
-#alias firefox="~/Dropbox/Downloads/firefox/firefox"
+#alias firefox="~/Nextcloud/Downloads/firefox/firefox"
 alias rstudio="/usr/lib/rstudio/bin/rstudio"
 #alias staruml="/opt/staruml/staruml"
 

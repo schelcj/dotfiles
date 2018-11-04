@@ -20,3 +20,5 @@ pasystray &
 google-drive-ocamlfuse -label umich ~/Drive/Umich/
 google-drive-ocamlfuse -label merit ~/Drive/Merit/
 google-drive-ocamlfuse -label pobox ~/Drive/Pobox/
+
+/home/schelcj/bin/Nextcloud-2.3.3-x86_64.AppImage &
