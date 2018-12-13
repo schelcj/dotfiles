@@ -6,8 +6,8 @@ folder-hook 'Umich/*' 'set signature=~/.mutt/signature.umich'
 folder-hook 'Umich/*' 'color status black yellow'
 folder-hook 'Umich/*' 'color indicator white blue'
 folder-hook 'Umich/*' 'macro index G "<shell-escape>offlineimap -u basic -1 -o -a Umich<return>" "Fetch mail from my Umich account"'
-#folder-hook 'Umich/*' 'macro pager S "<shell-escape>mairix -f ~/Dropbox/dot-files/mairix/mairixrc-umich " "Run mairix search"'
-#folder-hook 'Umich/*' 'macro index S "<shell-escape>mairix -f ~/Dropbox/dot-files/mairix/mairixrc-umich " "Run mairix search"'
+#folder-hook 'Umich/*' 'macro pager S "<shell-escape>mairix -f ~/Nextcloud/dot-files/mairix/mairixrc-umich " "Run mairix search"'
+#folder-hook 'Umich/*' 'macro index S "<shell-escape>mairix -f ~/Nextcloud/dot-files/mairix/mairixrc-umich " "Run mairix search"'
 folder-hook 'Umich/*' 'set smtp_url="smtp://schelcj%40umich.edu@smtp.gmail.com:587/"'
 
 folder-hook flux-support set strict_threads=no
