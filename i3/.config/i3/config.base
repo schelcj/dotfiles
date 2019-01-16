@@ -188,7 +188,7 @@ assign [class="^Slack"] 7
 assign [class="^HipChat"] 6
 assign [class="^Spotify"] 8
 
-exec ~/.i3/autostart
+exec ~/.config/i3/autostart
 
 $i3-theme-window
 
