@@ -26,7 +26,8 @@ bindsym $mod+Shift+Q kill
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run -nb \#484e50 -nf \#292d2e -sb \#757575
 #bindsym $mod+d exec dmenu_run -nb \#484e50 -nf \#ffffff -sb \#4c7899 -sf \#ffffff
-bindsym $mod+d exec dmenu_run_aliases -nb \#484e50 -nf \#ffffff -sb \#4c7899 -sf \#ffffff
+#bindsym $mod+d exec dmenu_run_aliases -nb \#484e50 -nf \#ffffff -sb \#4c7899 -sf \#ffffff
+bindsym $mod+d exec ~/scripts/rofi.sh
 
 # change focus
 bindsym $mod+j focus left
@@ -179,7 +180,7 @@ for_window [class="^gnome-calculator"] floating toggle
 for_window [class="^Skype"] floating toggle
 for_window [class="^xpad"] floating toggle
 for_window [class="^Xmessage"] floating toggle
-for_window [class="^hamster-indicator"] floating toggle
+for_window [class="^Hamster-indicator"] floating enable
 for_window [class="^Clockify"] floating toggle
 # for_window [class="^Gvim"] floating toggle
 
