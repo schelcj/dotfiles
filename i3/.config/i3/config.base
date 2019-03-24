@@ -26,8 +26,8 @@ bindsym $mod+Shift+Q kill
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run -nb \#484e50 -nf \#292d2e -sb \#757575
 #bindsym $mod+d exec dmenu_run -nb \#484e50 -nf \#ffffff -sb \#4c7899 -sf \#ffffff
-#bindsym $mod+d exec dmenu_run_aliases -nb \#484e50 -nf \#ffffff -sb \#4c7899 -sf \#ffffff
-bindsym $mod+d exec ~/scripts/rofi.sh
+bindsym $mod+d exec dmenu_run_aliases -nb \#484e50 -nf \#ffffff -sb \#4c7899 -sf \#ffffff
+#bindsym $mod+d exec ~/scripts/rofi.sh
 
 # change focus
 bindsym $mod+j focus left
