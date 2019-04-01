@@ -31,6 +31,8 @@ alias h="hamster-cli"
 
 alias milk="rememberthemilk --enable-transparenvisuals --force-enable-global-smart-add"
 
-alias control-panel="unset XDG_CURRENT_DESKTOP ; unity-control-center"
+#alias control-panel="unset XDG_CURRENT_DESKTOP ; unity-control-center"
+alias control-panel="XDG_CURRENT_DESKTOP=Unity7 ; unity-control-center"
+alias gnome-control-center="XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
 
 alias sqlitestudio="/home/schelcj/Downloads/SQLiteStudio/sqlitestudio"
