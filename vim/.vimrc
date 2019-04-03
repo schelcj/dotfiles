@@ -38,6 +38,7 @@ if v:version > 703
   Plugin 'scrooloose/syntastic'
   Plugin 'majutsushi/tagbar'
   Plugin 'mattn/calendar-vim'
+  Plugin 'aaronbieber/vim-quicktask'
 endif
 call vundle#end()
 filetype plugin indent on
@@ -259,3 +260,5 @@ function! XTermPasteBegin()
 endfunction
 
 let g:org_agenda_files=['~/Nextcloud/Documents/Org/index.org']
+let g:quicktask_snip_path = '~/Documents/Snips'
+
