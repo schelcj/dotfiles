@@ -33,3 +33,5 @@ alias milk="rememberthemilk --enable-transparenvisuals --force-enable-global-sma
 alias control-panel="unset XDG_CURRENT_DESKTOP ; unity-control-center"
 
 alias sqlitestudio="/home/schelcj/Downloads/SQLiteStudio/sqlitestudio"
+
+alias ccm=~/src/tools/ccm.pl
