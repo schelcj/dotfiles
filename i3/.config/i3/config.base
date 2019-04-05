@@ -27,6 +27,7 @@ bindsym $mod+Shift+Q kill
 #bindsym $mod+d exec dmenu_run -nb \#484e50 -nf \#292d2e -sb \#757575
 #bindsym $mod+d exec dmenu_run -nb \#484e50 -nf \#ffffff -sb \#4c7899 -sf \#ffffff
 bindsym $mod+d exec dmenu_run_aliases -nb \#484e50 -nf \#ffffff -sb \#4c7899 -sf \#ffffff
+#bindsym $mod+d exec ~/scripts/rofi.sh
 
 # change focus
 bindsym $mod+j focus left
@@ -170,7 +171,7 @@ bindsym XF86AudioLowerVolume exec ~/scripts/volctl down
 bindsym XF86AudioMute exec ~/scripts/volctl mute
 
 bindsym $mod+Control+w exec ~/scripts/weather.sh
-bindsym Print exec scrot -e 'mv $f ~/Dropbox/Media/Photos/Screenshots'
+bindsym Print exec scrot -e 'mv $f ~/Nextcloud/Photos/Screenshots'
 
 workspace_auto_back_and_forth yes
 
@@ -179,24 +180,61 @@ for_window [class="^gnome-calculator"] floating toggle
 for_window [class="^Skype"] floating toggle
 for_window [class="^xpad"] floating toggle
 for_window [class="^Xmessage"] floating toggle
-for_window [class="^Hamster-indicator"] floating toggle
+for_window [class="^Hamster-indicator"] floating enable
+for_window [class="^Clockify"] floating toggle
+# for_window [class="^Gvim"] floating toggle
 
-assign [class="^Google-chrome"] 1 :www
-# assign [class="^Slack"] 2 :comm
-# assign [class="^HipChat"] 2 :comm
+assign [class="^Google-chrome"] 1
+assign [class="^Slack"] 7
+assign [class="^HipChat"] 6
+assign [class="^Spotify"] 8
 
-exec ~/.i3/autostart
+exec ~/.config/i3/autostart
 
 $i3-theme-window
 
 for_window [class="^Slack"] mark --add slack
 for_window [class="^Spotify"] mark --add spotify
 for_window [class="^HipChat"] mark --add hipchat
+for_window [class="^Clockify"] mark --add clockify
 
 bindsym Mod4+1 [con_mark="comm"] focus
 bindsym Mod4+2 [con_mark="spotify"] focus
 bindsym Mod4+3 [con_mark="slack"] focus
 bindsym Mod4+4 [con_mark="hipchat"] focus
+bindsym Mod4+5 [con_mark="clockify"] focus
+
+bindsym $mod+Shift+exclam move workspace 1
+bindsym $mod+Shift+at move workspace 2
+bindsym $mod+Shift+numbersign move workspace 3
+bindsym $mod+Shift+dollar move workspace 4
+bindsym $mod+Shift+percent move workspace 5
+bindsym $mod+Shift+asciicircum move workspace 6
+bindsym $mod+Shift+ampersand move workspace 7
+bindsym $mod+Shift+asterisk move workspace 8
+bindsym $mod+Shift+parenleft move workspace 9
+bindsym $mod+Shift+parenright move workspace 10
+bindsym $mod+Shift+underscore move workspace 11
+bindsym $mod+Shift+plus move workspace 12
+
+bindsym $mod+F1 workspace 1
+bindsym $mod+F2 workspace 2
+bindsym $mod+F3 workspace 3
+bindsym $mod+F4 workspace 4
+bindsym $mod+F5 workspace 5
+bindsym $mod+F6 workspace 6
+bindsym $mod+F7 workspace 7
+bindsym $mod+F8 workspace 8
+bindsym $mod+F9 workspace 9
+bindsym $mod+F10 workspace 10
+bindsym $mod+F11 workspace 11
+bindsym $mod+F12 workspace 12
+
+bindsym $mod+Shift+F1 workspace 6
+bindsym $mod+Shift+F2 workspace 7
+bindsym $mod+Shift+F3 workspace 8
+bindsym $mod+Shift+F4 workspace 9
+bindsym $mod+Shift+F5 workspace 10
 
 # Host specific settings
 #

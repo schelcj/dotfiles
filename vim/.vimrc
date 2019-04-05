@@ -37,6 +37,8 @@ if v:version > 703
   Plugin 'fmoralesc/vim-pad'
   Plugin 'scrooloose/syntastic'
   Plugin 'majutsushi/tagbar'
+  Plugin 'mattn/calendar-vim'
+  Plugin 'aaronbieber/vim-quicktask'
 endif
 call vundle#end()
 filetype plugin indent on
@@ -223,8 +225,8 @@ noremap <F3> :noh<CR>
 iab <expr> dnow strftime("%c")
 iab <expr> dts strftime("%a %d %b %Y")
 
-let g:pad#dir="~/Dropbox/Documents/Notes/"
-let g:pad#rename_files=0
+let g:pad#dir="~/Nextcloud/Documents/Notes/"
+let g:pad#rename_files=1
 let g:pad#window_height=24
 let g:pad#default_file_extension=".md"
 
@@ -256,3 +258,7 @@ function! XTermPasteBegin()
   set paste
   return ""
 endfunction
+
+let g:org_agenda_files=['~/Nextcloud/Documents/Org/index.org']
+let g:quicktask_snip_path = '~/Documents/Snips'
+

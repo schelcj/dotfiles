@@ -5,8 +5,7 @@ blueman-adapters &
 /usr/bin/dunst &
 unity-settings-daemon &
 nm-applet &
-~/scripts/start_dropbox.sh
-ssh-add
+#~/scripts/start_dropbox.sh
 clipit &
 redshift-gtk &
 xscreensaver -no-splash &
@@ -16,6 +15,11 @@ indicator-sound-switcher &
 pasystray &
 
 #/opt/extras.ubuntu.com/my-weather-indicator/bin/my-weather-indicator &
+/opt/extras.ubuntu.com/indicator-brightness/indicator-brightness &
 google-drive-ocamlfuse -label umich ~/Drive/Umich/
 google-drive-ocamlfuse -label merit ~/Drive/Merit/
 google-drive-ocamlfuse -label pobox ~/Drive/Pobox/
+
+/home/schelcj/bin/Nextcloud-2.3.3-x86_64.AppImage &
+/home/schelcj/scripts/xscreensaver-watch.sh &
+ssh-add

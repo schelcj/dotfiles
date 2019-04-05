@@ -40,4 +40,4 @@ setlocal nowrap
 " colors directory. There may even be a colors directory in your own
 " $HOME/.vim directory.
 
-set foldlevel=2
+set foldlevel=1

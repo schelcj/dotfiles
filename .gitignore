@@ -1,5 +1,5 @@
-i3/.i3/config
-i3/.i3/logfile
+i3/.config/i3/config
+i3/.config/i3/logfile
 mc/.config/mc/panels.ini
 mc/.config/mc/hotlist.bak
 wallpapers/.wallpapers/category
