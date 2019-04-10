@@ -226,7 +226,7 @@ iab <expr> dnow strftime("%c")
 iab <expr> dts strftime("%a %d %b %Y")
 
 let g:pad#dir="~/Nextcloud/Documents/Notes/"
-let g:pad#rename_files=1
+let g:pad#rename_files=0
 let g:pad#window_height=24
 let g:pad#default_file_extension=".md"
 
@@ -261,4 +261,4 @@ endfunction
 
 let g:org_agenda_files=['~/Nextcloud/Documents/Org/index.org']
 let g:quicktask_snip_path = '~/Documents/Snips'
-
+let g:quicktask_snip_default_filetype = 'vimwiki'

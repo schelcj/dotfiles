@@ -40,8 +40,6 @@ GROUP "Umich"
 ENDGROUP
 GROUP "Concert"
   ENTRY "/sh://cscheller@avesso/home/cscheller" URL "/sh://cscheller@avesso/home/cscheller"
-  ENTRY "Client Directory" URL "/home/schelcj/Clients/concert"
-  ENTRY "cscheller@alba" URL "/sh://cscheller@alba/home/CONCERTPHARMA/cscheller"
 ENDGROUP
 GROUP "FTP Sites"
   ENTRY "ftp.bio.sph.umich.edu" URL "/ftp://xfer.bio.sph.umich.edu"
