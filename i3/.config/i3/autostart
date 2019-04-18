@@ -3,7 +3,7 @@
 xrdb ~/.Xdefaults
 blueman-adapters &
 /usr/bin/dunst &
-unity-settings-daemon &
+#unity-settings-daemon &
 nm-applet &
 #~/scripts/start_dropbox.sh
 clipit &
