@@ -1,5 +1,9 @@
 ( if
+( or
 ( contains ( window_class ) "Code" )
+( contains ( window_class ) "Slack" )
+( contains ( window_class ) "HipChat" )
+)
 ( begin
 ( spawn_async (str "transset-df -i " (window_xid) " 0.85" ))
 )
