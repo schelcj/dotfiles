@@ -1,6 +1,7 @@
 #!/bin/sh
 
 xrdb ~/.Xdefaults
+xcompmgr &
 blueman-adapters &
 /usr/bin/dunst &
 #unity-settings-daemon &
@@ -13,6 +14,7 @@ xpad -N -h &
 hamster-indicator &
 indicator-sound-switcher &
 pasystray &
+devilspie -a &
 
 #/opt/extras.ubuntu.com/my-weather-indicator/bin/my-weather-indicator &
 /opt/extras.ubuntu.com/indicator-brightness/indicator-brightness &

@@ -29,7 +29,7 @@ alias trello="xdg-open https://trello.com/"
 alias ham="hamster-cli list | xmessage -file -"
 alias h="hamster-cli"
 
-alias milk="rememberthemilk --enable-transparenvisuals --force-enable-global-smart-add"
+alias milk="rememberthemilk --disable-gpu --enable-transparent-visuals --force-enable-global-smart-add"
 
 #alias control-panel="unset XDG_CURRENT_DESKTOP ; unity-control-center"
 alias control-panel="XDG_CURRENT_DESKTOP=Unity7 ; unity-control-center"
