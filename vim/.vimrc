@@ -11,7 +11,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-scripts/Dpaste.com-Plugin'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
-Plugin 'vim-scripts/gnupg'
+Plugin 'jamessan/vim-gnupg'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-markdown'
 Plugin 'altercation/vim-colors-solarized'
@@ -122,6 +122,7 @@ let g:ackprg=$HOME . '/perl5/bin/ack'
 
 let g:GPGDefaultRecipients=["D6776630"]
 
+
 " ctrlp options
 set wildignore+=*/tmp/*,*/Drive/*,*.so,*.swp,*.zip,*/bower_components/*,*/node_modules/*,*/local/*
 let g:ctrlp_custom_ignore={
@@ -225,7 +226,7 @@ noremap <F3> :noh<CR>
 iab <expr> dnow strftime("%c")
 iab <expr> dts strftime("%a %d %b %Y")
 
-let g:pad#dir="~/Nextcloud/Documents/Notes/"
+let g:pad#dir="~/Dropbox/Documents/Notes/"
 let g:pad#rename_files=0
 let g:pad#window_height=24
 let g:pad#default_file_extension=".md"
@@ -259,6 +260,7 @@ function! XTermPasteBegin()
   return ""
 endfunction
 
-let g:org_agenda_files=['~/Nextcloud/Documents/Org/index.org']
-let g:quicktask_snip_path = '~/Nextcloud/Documents/Notes'
+let g:org_agenda_files=['~/Dropbox/Documents/Org/index.org']
+let g:quicktask_snip_path = '~/Dropbox/Documents/Notes'
 let g:quicktask_snip_default_filetype = 'vimwiki'
+let g:quicktask_snip_file_ext = '.wiki'

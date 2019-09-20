@@ -21,7 +21,7 @@ function! mywikis#load()
 
   " Default wiki
   let wiki_1 = {}
-  let wiki_1.path = '~/Nextcloud/Documents/Wikis/Default'
+  let wiki_1.path = '~/Dropbox/Documents/Wikis/Default'
   let wiki_1.diary_header = 'Journal'
   let wiki_1.diary_index = 'index'
   let wiki_1.diary_rel_path = '../Journal'
@@ -29,17 +29,17 @@ function! mywikis#load()
   " Public wiki
   let wiki_2 = {}
   let wiki_2.auto_export = 1
-  let wiki_2.path = '~/Nextcloud/Documents/Wikis/Public'
-  let wiki_2.path_html = '~/Nextcloud/Public'
-  let wiki_2.output_dir = '~/Nextcloud/Public'
+  let wiki_2.path = '~/Dropbox/Documents/Wikis/Public'
+  let wiki_2.path_html = '~/Dropbox/Public'
+  let wiki_2.output_dir = '~/Dropbox/Public'
   let wiki_2.template_ext = '.html'
   let wiki_2.template_default = 'bootstrap3'
-  let wiki_2.template_path = '~/Nextcloud/Documents/Wikis/templates'
+  let wiki_2.template_path = '~/Dropbox/Documents/Wikis/templates'
   let wiki_2.template_ext = '.html'
 
   " Journal wiki
   let wiki_3 = {}
-  let wiki_3.path = '~/Nextcloud/Documents/Wikis/Journal'
+  let wiki_3.path = '~/Dropbox/Documents/Wikis/Journal'
   let wiki_3.diary_header = 'Journal'
   let wiki_3.diary_index = 'index'
   let wiki_3.diary_rel_path = './'
