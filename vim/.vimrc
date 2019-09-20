@@ -260,5 +260,5 @@ function! XTermPasteBegin()
 endfunction
 
 let g:org_agenda_files=['~/Nextcloud/Documents/Org/index.org']
-let g:quicktask_snip_path = '~/Nextcloud/Documents/Snips'
+let g:quicktask_snip_path = '~/Nextcloud/Documents/Notes'
 let g:quicktask_snip_default_filetype = 'vimwiki'

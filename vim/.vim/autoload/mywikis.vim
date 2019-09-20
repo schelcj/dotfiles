@@ -42,7 +42,7 @@ function! mywikis#load()
   let wiki_3.path = '~/Nextcloud/Documents/Wikis/Journal'
   let wiki_3.diary_header = 'Journal'
   let wiki_3.diary_index = 'index'
-  let wiki_3.diary_rel_path = ''
+  let wiki_3.diary_rel_path = './'
 
   let g:vimwiki_hl_headers = 1
   let g:vimwiki_list = [wiki_1, wiki_2, wiki_3]

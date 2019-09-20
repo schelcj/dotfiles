@@ -16,6 +16,7 @@ GROUP "4077th"
   ENTRY "Unfiled Pictures" URL "/cifs/Media/Pictures/unfiled"
 ENDGROUP
 GROUP "Merit"
+  ENTRY "/sh://schelcj@merit-dev2-schelcj/home/MERIT/schelcj" URL "/sh://schelcj@merit-dev2-schelcj/home/MERIT/schelcj"
   ENTRY "/sh://schelcj@dev/home/MERIT/schelcj" URL "/sh://schelcj@dev/home/MERIT/schelcj"
   ENTRY "/ftp://ftp.radb.net/radb/dbase" URL "/ftp://ftp.radb.net/radb/dbase"
   ENTRY "schelcj@merit-dev-schelcj" URL "/sh://schelcj@merit-dev-schelcj/"

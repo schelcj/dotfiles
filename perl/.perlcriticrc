@@ -20,6 +20,7 @@ equivalent_modules = Modern::Perl
 
 # [-Documentation::PodSpelling]
 
+[-Subroutines::ProhibitSubroutinePrototypes]
 [Subroutines::ProhibitUnusedPrivateSubroutines]
 private_name_regex = _(?!build|trigger_)\w+
 
