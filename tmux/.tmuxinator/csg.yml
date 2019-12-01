@@ -1,7 +1,0 @@
-# ~/.tmuxinator/csg.yml
-
-name: csg
-
-windows:
-  - dumbo:
-      - ssh dumbo
